@@ -1,7 +1,8 @@
 # HTML-CSS-Less大作业 
 ### 一、创建仓库
-> 学习完 HTML CSS Less 所练习的静态网站”撩学堂“前台项目大作业代码
-> github仓库地址：git@github.com:Three-LEI/---.git
+> - HTML CSS Less 所练习的静态网站”撩学堂“前台项目大作业代码
+> - github仓库地址：git@github.com:Three-LEI/---.git
+> - students：淚泪泪
 
 ### 二、创建项目开发的文件组织结构
 > 创建依据：梳理开发思路
