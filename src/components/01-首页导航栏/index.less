@@ -1,1 +1,133 @@
 @import url(../../css/base.css);
+#nav-bar {
+  width: 100%;
+  height: 160px;
+  //background-color: #ddd;
+  .content {
+    //background-color: orange;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .top-box {
+      flex: 2;
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      .left-logo {
+        height: 100%;
+        flex: 1;
+        h1 {
+          margin: 0;
+          padding: 0;
+          width: 80%;
+          height: 80%;
+          a {
+            display: block;
+            font-size: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../../assets/images/logo.png");
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .center-box {
+        flex: 2;
+        .center-search {
+          width: 400px;
+          height: 50px;
+          //background-color: lavender;
+          margin: 0 auto;
+          display: flex;
+          border: 1px solid #aaa;;
+          border-radius: 50px;
+          overflow: hidden;
+          .down-menu {
+            flex: 1;
+            height: 100%;
+            //background-color: orangered;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            select {
+              width: 100%;
+              height: 100%;
+              border-top-left-radius: 50px;
+              border-bottom-left-radius: 50px;
+              outline: none;
+              border: none;
+              padding-left: 10px;
+              font-size: 14px;
+              color: #666;
+              &:focus {
+                color: var(--them-color);
+              }
+              & option {
+                font-size: 16px;
+              }
+            }
+          }
+          .search {
+            flex:4;
+            height: 100%;
+            //background-color: cadetblue;
+            input {
+              width: 100%;
+              height: 100%;
+              padding: 0 0 0 10px;
+              margin: 0;
+              border: none;
+              outline: none;
+              font-size: 14px;
+              color: #666666;
+              &:focus {
+                color: black;
+              }
+            }
+          }
+          .search-button {
+            flex: 1;
+            height: 100%;
+            //background-color: orangered;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            input {
+              width: 100%;
+              height: 100%;
+              outline: none;
+              border: none;
+              font-size: 14px;
+              cursor: pointer;
+              border-top-right-radius: 50px;
+              border-bottom-right-radius: 50px;
+              background-color: var(--them-color);
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .right-login {
+        flex: 1;
+        height: 100%;
+        //background-color: cadetblue;
+      }
+    }
+    .bottom-box {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      .left-nav-list {
+        flex: 1;
+        height: 100%;
+        //background-color: darkseagreen;
+      }
+      .right-menu {
+        flex: 1;
+        height: 100%;
+        //background-color: antiquewhite;
+      }
+    }
+  }
+}

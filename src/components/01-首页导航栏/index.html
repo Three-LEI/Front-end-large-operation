@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>01-首页导航栏</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3793236_vre9jg4dry.css">
 </head>
 <body>
     <div id="nav-bar">
-        <div class="content">
+        <div class="content bx">
             <div class="top-box">
-                <div class="left-logo"></div>
-                <div class="center-search"></div>
+                <div class="left-logo">
+                    <!--对网站设置SEO优化-->
+                    <h1>
+                        <a href="#">淚泪泪</a>
+                    </h1>
+                </div>
+                <div class="center-box">
+                    <form action="">
+                        <div class="center-search">
+                            <div class="down-menu">
+                                <label>
+                                    <select name="category">
+                                        <option value="all">全部</option>
+                                        <option value="course">课程</option>
+                                        <option value="lecturer">讲师</option>
+                                        <option value="article">文章</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="search">
+                                <label>
+                                    <input type="text" placeholder="请输入关键字" name="searchContent">
+                                </label>
+                            </div>
+                            <div class="search-button iconfont">
+                                    <input type="submit" value="&#xe8b9; 搜索">
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <div class="right-login"></div>
             </div>
             <div class="bottom-box">
                 <div class="left-nav-list"></div>
-                <div class="right-right-nav"></div>
+                <div class="right-menu"></div>
             </div>
         </div>
     </div>
