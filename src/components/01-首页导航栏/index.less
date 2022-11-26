@@ -114,6 +114,47 @@
         flex: 1;
         height: 100%;
         //background-color: cadetblue;
+        .box {
+          width: fit-content;
+          height: 50px;
+          //background-color: orangered;
+          margin-left: auto;
+          position: relative;
+          .login-box {
+            display: flex;
+            align-items: center;
+            .user-name {
+              font-size: 16px;
+              color: #666666;
+              margin-right: 10px;
+            }
+            .user-head-img {
+              width: 40px;
+              border-radius: 50%;
+              background-color: #fff;
+            }
+          }
+          &:hover .panel{
+            display: block;
+          }
+          .panel {
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: @themColor;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            &:before {
+              content: "";
+              border: 10px solid transparent;
+              border-bottom-color: @themColor;
+              position: absolute;
+              top: -20px;
+              right: 10px;
+            }
+          }
+        }
       }
     }
     .bottom-box {
