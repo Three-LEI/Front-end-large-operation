@@ -40,7 +40,7 @@
 }
 #nav-bar .content .top-box .center-box .center-search {
   width: 400px;
-  height: 50px;
+  height: 40px;
   margin: 0 auto;
   display: flex;
   border: 1px solid #aaa;
@@ -200,15 +200,24 @@
 #nav-bar .content .bottom-box .left-nav-list ul .item {
   margin: 0 15px;
   padding: 5px 0;
+  transition: border-bottom-color 0.3s;
+  position: relative;
 }
 #nav-bar .content .bottom-box .left-nav-list ul .item a {
   color: #666;
   font-size: 16px;
 }
-#nav-bar .content .bottom-box .left-nav-list ul .item:first-child {
-  border-bottom: 2px solid var(--themColor);
+#nav-bar .content .bottom-box .left-nav-list ul .item.current:after,
+#nav-bar .content .bottom-box .left-nav-list ul .item:hover:after {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  content: "";
+  border-bottom: 3px solid var(--themColor);
 }
-#nav-bar .content .bottom-box .left-nav-list ul .item:first-child a {
+#nav-bar .content .bottom-box .left-nav-list ul .item.current a,
+#nav-bar .content .bottom-box .left-nav-list ul .item:hover a {
   color: var(--themColor);
 }
 #nav-bar .content .bottom-box .right-menu {

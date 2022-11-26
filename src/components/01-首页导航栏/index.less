@@ -39,7 +39,7 @@
         flex: 2;
         .center-search {
           width: 400px;
-          height: 50px;
+          height: 40px;
           //background-color: lavender;
           margin: 0 auto;
           display: flex;
@@ -208,12 +208,23 @@
           .item {
             margin: 0 15px;
             padding: 5px 0;
+            transition: border-bottom-color 0.3s;
+            position: relative;
+            //background-color: #aaaaaa;
             a {
               color: #666;
               font-size: 16px;
             }
-            &:first-child{
-              border-bottom: 2px solid var(--themColor);
+            &.current,
+            &:hover {
+              &:after {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                content: "";
+                border-bottom: 3px solid var(--themColor);
+              }
               a {
                 color: var(--themColor);
               }
