@@ -1,4 +1,6 @@
 @import url(../../css/base.css);
+@import url(../../config/colorConfig);
+
 #nav-bar {
   width: 100%;
   height: 160px;
@@ -61,7 +63,7 @@
               font-size: 14px;
               color: #666;
               &:focus {
-                color: var(--them-color);
+                color: @themColor;
               }
               & option {
                 font-size: 16px;
@@ -101,7 +103,7 @@
               cursor: pointer;
               border-top-right-radius: 50px;
               border-bottom-right-radius: 50px;
-              background-color: var(--them-color);
+              background-color: @themColor;
               color: #fff;
             }
           }

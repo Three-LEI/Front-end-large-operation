@@ -64,7 +64,7 @@
   color: #666;
 }
 #nav-bar .content .top-box .center-box .center-search .down-menu select:focus {
-  color: var(--them-color);
+  color: #10ac84;
 }
 #nav-bar .content .top-box .center-box .center-search .down-menu select option {
   font-size: 16px;
@@ -101,7 +101,7 @@
   cursor: pointer;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  background-color: var(--them-color);
+  background-color: #10ac84;
   color: #fff;
 }
 #nav-bar .content .top-box .right-login {
