@@ -4,7 +4,7 @@
 #nav-bar {
   width: 100%;
   height: 160px;
-  //background-color: #ddd;
+  background-color: #fff;
   .content {
     //background-color: orange;
     height: 100%;
@@ -114,6 +114,7 @@
         flex: 1;
         height: 100%;
         //background-color: cadetblue;
+        z-index: 999;
         .box {
           width: fit-content;
           height: 50px;
@@ -242,17 +243,63 @@
           display: flex;
           align-items: center;
           li {
-            a {
-              color: #666;
-              &:hover {
-                color: var(--themColor);
+            height: 100%;
+            color: #666;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &:hover {
+              color: var(--themColor);
+              .AP-menu {
+                display: block;
               }
             }
             &:first-child{
               margin-right: 20px;
             }
+            .AP-menu {
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              top: 100%;
+              width: 240px;
+              box-sizing: border-box;
+              padding: 5px;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              border-radius: 10px;
+              display: none;
+              p {
+                margin: 0;
+                padding: 5px 0;
+              }
+              .title {
+                color: var(--themColor);
+                font-size: 20px;
+                font-weight: bold;
+              }
+              .txt {
+                font-size: 13px;
+                color: #666;
+              }
+              img {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 5px;
+              }
+              &::before {
+                content: "";
+                border: 10px solid transparent;
+                border-bottom-color: #ddd;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -20px;
+              }
+            }
           }
-
         }
       }
     }
