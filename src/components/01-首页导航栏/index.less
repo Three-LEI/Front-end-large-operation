@@ -43,7 +43,7 @@
           //background-color: lavender;
           margin: 0 auto;
           display: flex;
-          border: 1px solid #aaa;;
+          border: 1px solid var(--borderColor);
           border-radius: 50px;
           overflow: hidden;
           .down-menu {
@@ -61,7 +61,7 @@
               border: none;
               padding-left: 10px;
               font-size: 14px;
-              color: #666;
+              color: var(--mianTextColor);
               &:focus {
                 color: var(--themColor);
               }
@@ -82,7 +82,7 @@
               border: none;
               outline: none;
               font-size: 14px;
-              color: #666666;
+              color: var(--mianTextColor);
               &:focus {
                 color: black;
               }
@@ -126,7 +126,7 @@
             align-items: center;
             .user-name {
               font-size: 16px;
-              color: #666666;
+              color: var(--mianTextColor);
               margin-right: 10px;
               i {
                 font-size: 25px;
@@ -146,7 +146,7 @@
             display: none;
             width: 200px;
             background-color: #fff;
-            border: 1px solid #ddd;
+            border: 1px solid var(--borderColor);
             position: absolute;
             right: 0;
             top: 50px;
@@ -164,7 +164,7 @@
                   padding: 10px;
                   line-height: 20px;
                   font-size: 14px;
-                  color: #666666;
+                  color: var(--mianTextColor);
                   box-sizing: border-box;
                   &:active {
                     color: var(--themColor);
@@ -175,17 +175,17 @@
                 }
                 &:first-child > a{
                   color: var(--themColor);
-                  border-bottom: 1px solid #eee;
+                  border-bottom: 1px solid var(--lightBorder);
                 }
                 &:last-child > a{
-                  border-top: 1px solid #eee;
+                  border-top: 1px solid var(--lightBorder);
                 }
               }
             }
             &:before {
               content: "";
               border: 10px solid transparent;
-              border-bottom-color: #ddd;
+              border-bottom-color: var(--borderColor);
               position: absolute;
               top: -20px;
               right: 10px;
@@ -213,7 +213,7 @@
             position: relative;
             //background-color: #aaaaaa;
             a {
-              color: #666;
+              color: var(--mianTextColor);
               font-size: 16px;
             }
             &.current,
@@ -244,7 +244,7 @@
           align-items: center;
           li {
             height: 100%;
-            color: #666;
+            color: var(--mianTextColor);
             cursor: pointer;
             text-align: center;
             display: flex;
@@ -268,7 +268,7 @@
               box-sizing: border-box;
               padding: 5px;
               background-color: #fff;
-              border: 1px solid #ddd;
+              border: 1px solid var(--borderColor);
               border-radius: 10px;
               display: none;
               p {
@@ -282,7 +282,7 @@
               }
               .txt {
                 font-size: 13px;
-                color: #666;
+                color: var(--mianTextColor);
               }
               img {
                 width: 150px;
@@ -292,7 +292,7 @@
               &::before {
                 content: "";
                 border: 10px solid transparent;
-                border-bottom-color: #ddd;
+                border-bottom-color: var(--borderColor);
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);

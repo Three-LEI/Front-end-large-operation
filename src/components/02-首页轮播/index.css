@@ -1,0 +1,79 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+.lbt {
+  width: 100%;
+  height: 420px;
+}
+.lbt .lbt-box {
+  min-width: var(--bxSize);
+  height: 100%;
+  position: relative;
+}
+.lbt .lbt-box .lbt-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.lbt .lbt-box .lbt-content li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lbt .lbt-box .lbt-content li.choose a {
+  opacity: 1;
+}
+.lbt .lbt-box .lbt-content li a {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s linear;
+}
+.lbt .lbt-box .lbt-content li a img {
+  display: block;
+  margin: 0 auto;
+  width: var(--bxSize);
+  height: 100%;
+}
+.lbt .lbt-box .right-lbt-list {
+  width: 300px;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 10px 25px;
+  border-radius: 5px;
+  position: absolute;
+  right: calc((100% - var(--bxSize)) / 2 );
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lbt .lbt-box .right-lbt-list li {
+  width: 100%;
+  line-height: 40px;
+  color: #fff;
+  cursor: default;
+  position: relative;
+}
+.lbt .lbt-box .right-lbt-list li span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lbt .lbt-box .right-lbt-list li:hover,
+.lbt .lbt-box .right-lbt-list li.choose {
+  color: var(--themColor);
+}
+.lbt .lbt-box .right-lbt-list li:hover::before,
+.lbt .lbt-box .right-lbt-list li.choose::before {
+  content: "";
+  border: 7px solid transparent;
+  border-right-color: var(--themColor);
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*# sourceMappingURL=index.css.map */

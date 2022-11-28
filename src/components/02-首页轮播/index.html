@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-首页轮播</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="lbt">
+        <div class="lbt-box">
+            <ul class="lbt-content">
+                <li class="choose"><a href="#" class="lb-bg"><img src="../../assets/images/banner1.png" alt=""></a></li>
+                <li><a href="#" class="lb-bg"><img src="../../assets/images/banner2.jpg" alt=""></a></li>
+                <li><a href="#" class="lb-bg"><img src="../../assets/images/banner3.png" alt=""></a></li>
+                <li><a href="#" class="lb-bg"><img src="../../assets/images/banner4.jpg" alt=""></a></li>
+                <li><a href="#" class="lb-bg"><img src="../../assets/images/banner5.jpg" alt=""></a></li>
+                <li><a href="#" class="lb-bg"><img src="../../assets/images/banner6.jpg" alt=""></a></li>
+            </ul>
+            <ul class="right-lbt-list">
+                <li class="choose"><span>学力公开，刻不容缓！更多好课等你来报名哦！</span></li>
+                <li><span>找回你错过的高薪职位！</span></li>
+                <li><span>网络安全，好课榜单</span></li>
+                <li><span>初音未来美图大全</span></li>
+                <li><span>明日方舟游戏今日上限！</span></li>
+                <li><span>猫女！破次元游戏首发上线，等你下载</span></li>
+            </ul>
+        </div>
+    </div>
+<script src="./grade.js"></script>
+<script>
+    window.addEventListener('load', function(){
+        Grade(document.querySelectorAll('.lb-bg'))
+    })
+</script>
+
+<script>
+    // 轮播图切换联动效果
+    // 1.获取所有的标题 以及 所有的图片
+    let currentIndex = 0
+    let titles = document.querySelectorAll(".lbt>.lbt-box>.right-lbt-list>li")
+    let images = document.querySelectorAll(".lbt>.lbt-box>.lbt-content>li")
+
+    titles.forEach((title, index)=>{
+        title.onmouseover = function () {
+            titles[currentIndex].className = ""
+            images[currentIndex].className = ""
+
+            title.className = "choose"
+            images[index].className = "choose"
+
+            currentIndex = index
+        }
+    })
+</script>
+</body>
+</html>

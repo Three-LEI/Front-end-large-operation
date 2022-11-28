@@ -1,4 +1,6 @@
 :root {
     --themColor: #10ac84;
-    /* --themColor: #3c40c6; */
+    --mianTextColor: #666;
+    --borderColor: #bbb;
+    --lightBorder: #eee;
 }

@@ -1,6 +1,10 @@
 @import url(normalize.css);
 @import url(//at.alicdn.com/t/c/font_3793236_r4qwhhdivco.css);
 
+:root {
+  --bxSize: 1205px;
+}
+
 .bx {
   margin: 0 auto;
   width: 1205px;
