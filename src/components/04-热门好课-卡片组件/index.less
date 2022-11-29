@@ -6,31 +6,106 @@
   height: 300px;
   border-radius: 5px;
   overflow: hidden;
+  margin: 50px auto;
+  transition: all 0.5s;
   a {
     .top-images {
       height: 50%;
       width: 100%;
       background-color: #10ac84;
       position: relative;
-      .start-icon {
-        color: #fff;
-        font-size: 50px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-      }
+      overflow: hidden;
       img {
         width: 100%;
         height: 100%;
-        filter: brightness(0.5);
+        filter: brightness(0.9);
+        transition: all 0.5s;
+      }
+      .hot-tags {
+        width: 65px;
+        height: 23px;
+        padding-left: 8px;
+        line-height: 23px;
+        vertical-align: middle;
+        color: #fff;
+        background-image: url("../../assets/images/layout_css_sprites.png");
+        background-position: -90px -10px;
+
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 2;
+      }
+      &:hover {
+        & > img {
+          filter: brightness(1);
+          transform: scale(110%, 110%);
+        }
       }
     }
     .bottom-content {
       height: 50%;
       width: 100%;
       background-color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      color: var(--mianTextColor);
+      flex-direction: column;
+      .card-title {
+        color: var(--darkText);
+        font-size: 20px;
+        flex: 2;
+        font-weight: bold;
+        .lecturer {
+          font-size: 14px;
+          margin: 0;
+          font-weight: 500;
+          color: var(--themColor);
+        }
+      }
+      .score {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        .star {
+          width: 56px;
+          height: 9px;
+          background-image: url("../../assets/images/layout_css_sprites.png");
+          background-position: -92px -58px;
+          margin-right: 10px;
+          .yellow-star {
+            height: 100%;
+            background-image: url("../../assets/images/layout_css_sprites.png");
+            background-position: -11px -158px;
+          }
+        }
+        .fs {
+          margin-right: 5px;
+        }
+      }
+      .zan {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        .icon-zan {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+        .number-person {
+          margin-right: 5px;
+        }
+        .release-date {
+          margin-left: auto;
+          color: var(--borderColor);
+          font-size: 14px;
+        }
+      }
     }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
 }
