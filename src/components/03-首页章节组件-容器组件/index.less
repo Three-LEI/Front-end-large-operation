@@ -1,0 +1,64 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+
+.chapter-container {
+  height: fit-content;
+  //background-color: #ccc;
+  //border: 1px solid #ccc;
+  text-align: center;
+  .chapter-titles {
+    height: fit-content;
+    position: relative;
+    color: var(--themColor);
+    padding: 10px 0;
+    .title {
+      font-size: 25px;
+    }
+    .english {
+      font-size: 12px;
+      font-weight: 100;
+    }
+    .right-txt {
+      color: var(--mianTextColor);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        color: var(--themColor);
+      }
+    }
+  }
+  .chapter-content-area {
+    width: 100%;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .content {
+      height: 250px;
+      background-color: seagreen;
+    }
+    .c5 {
+      width: ~"calc((100% - 4 * 20px) / 5)";
+      margin-bottom: 20px;
+      &:not(:nth-child(5n + 1)) {
+        margin-left: 20px;
+      }
+    }
+    .c4 {
+      width: ~"calc((100% - 3 * 20px) / 4)";
+      margin-bottom: 20px;
+      &:not(:nth-child(4n + 1)) {
+        margin-left: 20px;
+      }
+    }
+    .c3 {
+      width: ~"calc((100% - 2 * 20px) / 3)";
+      margin-bottom: 20px;
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 20px;
+      }
+    }
+  }
+}
