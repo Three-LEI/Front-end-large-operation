@@ -1,0 +1,36 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+
+.card-hot-Good-Lesson {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  a {
+    .top-images {
+      height: 50%;
+      width: 100%;
+      background-color: #10ac84;
+      position: relative;
+      .start-icon {
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.5);
+      }
+    }
+    .bottom-content {
+      height: 50%;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+}
