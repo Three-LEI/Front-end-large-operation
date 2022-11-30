@@ -11,7 +11,6 @@
 .card-hot-Good-Lesson a .top-images {
   height: 50%;
   width: 100%;
-  background-color: #10ac84;
   position: relative;
   overflow: hidden;
 }
@@ -37,7 +36,7 @@
 }
 .card-hot-Good-Lesson a .top-images:hover > img {
   filter: brightness(1);
-  transform: scale(110%, 110%);
+  transform: scale(1.1);
 }
 .card-hot-Good-Lesson a .bottom-content {
   height: 50%;
@@ -57,8 +56,8 @@
 }
 .card-hot-Good-Lesson a .bottom-content .card-title .lecturer {
   font-size: 14px;
+  font-weight: lighter;
   margin: 0;
-  font-weight: 500;
   color: var(--themColor);
 }
 .card-hot-Good-Lesson a .bottom-content .score {

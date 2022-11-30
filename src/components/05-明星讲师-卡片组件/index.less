@@ -1,0 +1,88 @@
+@import url(../../config/colorConfig.css);
+@import url(../../css/base.css);
+
+.card-lecturer {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid  var(--borderColor);
+    border-radius: 10px;
+    // box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .left-head-picture {
+        flex: 1;
+        // border: 1px solid tomato;
+        position: relative;
+        .img-container {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            border: 3px solid #fff;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .lecturer-tags {
+            width: 80%;
+            line-height: 30px;
+            border-radius: 40px;
+            font-size: 20px;
+            background-color: var(--themColor);
+            color: #fff;
+            text-align: center;
+
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s;
+        }
+    }
+    .right-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        .call-titles {
+            width: 100%;
+            line-height: 30px;
+            // background-color: #aaa;
+            color: var(--themColor);
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid var(--themColor);
+            margin-top: 5px;
+        }
+        .introduction {
+            flex: 1;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 5px;
+            text-align: justify;
+            overflow-y: auto;
+            color: var(--mianTextColor);
+        }
+    }
+    transition: all 0.3s;
+    &:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 10px 10px 0 0 #aaa;
+    }
+}
