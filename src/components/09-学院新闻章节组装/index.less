@@ -1,0 +1,123 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+
+.chapter-container {
+  height: fit-content;
+  //background-color: #ccc;
+  //border: 1px solid #ccc;
+  .chapter-titles {
+    height: fit-content;
+    position: relative;
+    color: var(--themColor);
+    padding: 10px 0;
+    text-align: center;
+    .title {
+      font-size: 25px;
+    }
+    .english {
+      font-size: 12px;
+      font-weight: 100;
+    }
+    .right-txt {
+      color: var(--mianTextColor);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        color: var(--themColor);
+      }
+    }
+  }
+  .chapter-content-area {
+    width: 100%;
+    //background-color: #999;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .news-card {
+      width: 500px;
+      min-width: 400px;
+      border: solid var(--borderColor) 1px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 20px;
+      .news-list {
+        margin-left: 5px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          a {
+            font-size: 16px;
+            line-height: 40px;
+            color: var(--darkText);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            transition: color 0.3s;
+            &:hover {
+              color: var(--themColor);
+              &::before {
+                content: "";
+                border: 5px solid transparent;
+                border-left-color: var(--themColor);
+
+                position: absolute;
+                top: 50%;
+                left: -10px;
+                transform: translateY(-50%);
+              }
+            }
+          }
+          span {
+            text-align: right;
+            min-width: 150px;
+            font-size: 12px;
+            color: var(--mianTextColor);
+            margin-right: 5px;
+          }
+          &:not(:nth-child(5n + 1)) {
+            border-top: 1px solid var(--lightBorder);
+          }
+        }
+      }
+    }
+
+    //.content {
+    //  height: 250px;
+    //  background-color: seagreen;
+    //}
+    .c5 {
+      width: ~"calc((100% - 4 * 20px) / 5)";
+      margin-bottom: 20px;
+      &:not(:nth-child(5n + 1)) {
+        margin-left: 20px;
+      }
+    }
+    .c4 {
+      width: ~"calc((100% - 3 * 20px) / 4)";
+      margin-bottom: 20px;
+      &:not(:nth-child(4n + 1)) {
+        margin-left: 20px;
+      }
+    }
+    .c3 {
+      width: ~"calc((100% - 2 * 20px) / 3)";
+      margin-bottom: 20px;
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 20px;
+      }
+    }
+    .c2 {
+      width: ~"calc((100% - 1 * 20px) / 2)";
+      margin-bottom: 20px;
+      &:not(:nth-child(2n + 1)) {
+        margin-left: 20px;
+      }
+    }
+  }
+}
