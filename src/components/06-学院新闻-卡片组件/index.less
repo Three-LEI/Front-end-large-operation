@@ -1,0 +1,52 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+
+.news-card {
+  width: 500px;
+  min-width: 500px;
+  border: solid var(--borderColor) 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  .news-list {
+    margin-left: 5px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      a {
+        font-size: 16px;
+        line-height: 40px;
+        color: var(--darkText);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: color 0.3s;
+        &:hover {
+          color: var(--themColor);
+          &::before {
+            content: "";
+            border: 5px solid transparent;
+            border-left-color: var(--themColor);
+
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      span {
+        text-align: right;
+        min-width: 150px;
+        font-size: 12px;
+        color: var(--mianTextColor);
+        margin-right: 5px;
+      }
+      &:not(:nth-child(5n + 1)) {
+        border-top: 1px solid var(--lightBorder);
+      }
+    }
+  }
+}

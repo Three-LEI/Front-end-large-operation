@@ -2,6 +2,7 @@
 @import url(../../css/base.css);
 .card-lecturer {
   width: 400px;
+  min-width: 350px;
   height: 150px;
   background-color: #fff;
   border: 1px solid var(--borderColor);
@@ -13,9 +14,10 @@
 }
 .card-lecturer .left-head-picture {
   flex: 1;
+  max-width: 200px;
   position: relative;
 }
-.card-lecturer .left-head-picture .img-container {
+.card-lecturer .left-head-picture a .img-container {
   width: 150px;
   height: 150px;
   background-color: #fff;
@@ -29,11 +31,11 @@
   transform: translateX(-50%);
   overflow: hidden;
 }
-.card-lecturer .left-head-picture .img-container img {
+.card-lecturer .left-head-picture a .img-container img {
   width: 100%;
   height: 100%;
 }
-.card-lecturer .left-head-picture .lecturer-tags {
+.card-lecturer .left-head-picture a .lecturer-tags {
   width: 80%;
   line-height: 30px;
   border-radius: 40px;
@@ -47,14 +49,14 @@
   transform: translateX(-50%);
   transition: all 0.3s;
 }
-.card-lecturer .left-head-picture:hover > .lecturer-tags::after {
+.card-lecturer .left-head-picture a:hover > .lecturer-tags::after {
   content: "<";
   position: absolute;
   right: 0;
   opacity: 0;
   animation: animation-right 0.5s ease forwards;
 }
-.card-lecturer .left-head-picture:hover > .lecturer-tags::before {
+.card-lecturer .left-head-picture a:hover > .lecturer-tags::before {
   content: ">";
   position: absolute;
   left: 0;
@@ -79,15 +81,15 @@
   margin-top: 5px;
 }
 .card-lecturer .right-content .introduction {
-  flex: 1;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100px;
   font-size: 14px;
   box-sizing: border-box;
   padding: 5px;
   text-align: justify;
-  overflow-y: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--mianTextColor);
 }
 .card-lecturer:hover {
