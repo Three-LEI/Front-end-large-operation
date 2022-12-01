@@ -1,0 +1,117 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+footer {
+  width: 100%;
+  height: 185px;
+  background-color: var(--darkText);
+  display: flex;
+  align-items: center;
+}
+footer .footer-container {
+  height: 110px;
+  display: flex;
+}
+footer .footer-container .left-info {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-container .left-info .company-info {
+  color: #fff;
+  font-size: 16px;
+}
+footer .footer-container .left-info .menu {
+  display: flex;
+}
+footer .footer-container .left-info .menu li a {
+  color: #fff;
+}
+footer .footer-container .left-info .menu li a:hover {
+  color: var(--themColor);
+}
+footer .footer-container .left-info .menu li:not(:first-child) {
+  margin-left: 15px;
+}
+footer .footer-container .left-info .copyright-info {
+  font-size: 14px;
+  color: var(--borderColor);
+}
+footer .footer-container .right-info {
+  flex: 1;
+  height: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-container .right-info .top-img .wx,
+footer .footer-container .right-info .top-img .qq {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  position: relative;
+}
+footer .footer-container .right-info .top-img .wx .ewm,
+footer .footer-container .right-info .top-img .qq .ewm {
+  display: none;
+  width: 110px;
+  height: 110px;
+  padding: 2px;
+  border: 2px solid var(--themColor);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 130%;
+  transform: translateX(-50%);
+}
+footer .footer-container .right-info .top-img .wx .ewm::after,
+footer .footer-container .right-info .top-img .qq .ewm::after {
+  content: "";
+  border: 10px solid transparent;
+  border-top-color: var(--themColor);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .footer-container .right-info .top-img .wx .ewm img,
+footer .footer-container .right-info .top-img .qq .ewm img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+footer .footer-container .right-info .top-img .wx:hover .ewm,
+footer .footer-container .right-info .top-img .qq:hover .ewm {
+  display: block;
+}
+footer .footer-container .right-info .top-img .qq {
+  background-image: url("../../assets/images/layout_css_sprites2.png");
+  background-position: -10px -280px;
+  margin-right: 20px;
+}
+footer .footer-container .right-info .top-img .qq:hover {
+  background-position: -76px -280px;
+}
+footer .footer-container .right-info .top-img .wx {
+  background-image: url("../../assets/images/layout_css_sprites2.png");
+  background-position: -220px -174px;
+}
+footer .footer-container .right-info .top-img .wx:hover {
+  background-position: -286px -174px;
+}
+footer .footer-container .right-info .center {
+  font-size: 14px;
+  color: #fff;
+}
+footer .footer-container .right-info .center span {
+  font-size: 16px;
+  font-weight: bold;
+}
+footer .footer-container .right-info .footer-phone {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.css.map */
