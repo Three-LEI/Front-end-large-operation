@@ -1,0 +1,163 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+.chapter-container {
+  height: fit-content;
+}
+.chapter-container .chapter-titles {
+  height: fit-content;
+  position: relative;
+  color: var(--themColor);
+  padding: 10px 0;
+  text-align: center;
+}
+.chapter-container .chapter-titles .title {
+  font-size: 25px;
+}
+.chapter-container .chapter-titles .english {
+  font-size: 12px;
+  font-weight: 100;
+}
+.chapter-container .chapter-titles .right-txt {
+  color: var(--mianTextColor);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.chapter-container .chapter-titles .right-txt:hover {
+  color: var(--themColor);
+}
+.chapter-container .chapter-content-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px auto;
+  transition: all 0.5s;
+  text-align: left;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .top-images {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .top-images img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  transition: all 0.5s;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .top-images .hot-tags {
+  width: 65px;
+  height: 23px;
+  padding-left: 8px;
+  line-height: 23px;
+  vertical-align: middle;
+  color: #fff;
+  background-image: url("../../assets/images/layout_css_sprites.png");
+  background-position: -90px -10px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 2;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .top-images:hover > img {
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content {
+  height: 50%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  color: var(--mianTextColor);
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .card-title {
+  color: var(--darkText);
+  font-size: 20px;
+  flex: 2;
+  font-weight: bold;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .card-title .lecturer {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  color: var(--themColor);
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .score {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .score .star {
+  width: 56px;
+  height: 9px;
+  background-image: url("../../assets/images/layout_css_sprites.png");
+  background-position: -92px -58px;
+  margin-right: 10px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .score .star .yellow-star {
+  height: 100%;
+  background-image: url("../../assets/images/layout_css_sprites.png");
+  background-position: -11px -158px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .score .fs {
+  margin-right: 5px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .zan {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .zan .icon-zan {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .zan .number-person {
+  margin-right: 5px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson a .bottom-content .zan .release-date {
+  margin-left: auto;
+  color: var(--borderColor);
+  font-size: 14px;
+}
+.chapter-container .chapter-content-area .card-hot-Good-Lesson:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.chapter-container .chapter-content-area .c5 {
+  width: calc((100% - 4 * 20px) / 5);
+  margin-bottom: 20px;
+}
+.chapter-container .chapter-content-area .c5:not(:nth-child(5n + 1)) {
+  margin-left: 20px;
+}
+.chapter-container .chapter-content-area .c4 {
+  width: calc((100% - 3 * 20px) / 4);
+  margin-bottom: 20px;
+}
+.chapter-container .chapter-content-area .c4:not(:nth-child(4n + 1)) {
+  margin-left: 20px;
+}
+.chapter-container .chapter-content-area .c3 {
+  width: calc((100% - 2 * 20px) / 3);
+  margin-bottom: 20px;
+}
+.chapter-container .chapter-content-area .c3:not(:nth-child(3n + 1)) {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=index.css.map */
