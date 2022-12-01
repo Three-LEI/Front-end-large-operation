@@ -262,6 +262,7 @@
   border: 1px solid var(--borderColor);
   border-radius: 10px;
   display: none;
+  z-index: 9;
 }
 #nav-bar .content .bottom-box .right-menu > ul li .AP-menu p {
   margin: 0;
