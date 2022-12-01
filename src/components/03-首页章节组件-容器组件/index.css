@@ -2,13 +2,13 @@
 @import url(../../config/colorConfig.css);
 .chapter-container {
   height: fit-content;
-  text-align: center;
 }
 .chapter-container .chapter-titles {
   height: fit-content;
   position: relative;
   color: var(--themColor);
   padding: 10px 0;
+  text-align: center;
 }
 .chapter-container .chapter-titles .title {
   font-size: 25px;
