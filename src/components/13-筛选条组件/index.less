@@ -1,0 +1,36 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+
+.screen-bar {
+  width: 100%;
+  min-width: 1205px;
+  height: 40px;
+  background: linear-gradient(#f7f6f8, #ffffff 20%);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  .screen-container {
+    height: 100%;
+    dl {
+      //line-height: 40px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      dt {
+        color: var(--mianTextColor);
+      }
+      dd {
+        height: 30px;
+        line-height: 30px;
+        color: var(--darkText);
+        padding: 0 10px;
+        margin-left: 10px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        &.selected {
+          border: 1px solid var(--themColor);
+          border-radius: 5px;
+          color: var(--themColor);
+        }
+      }
+    }
+  }
+}
