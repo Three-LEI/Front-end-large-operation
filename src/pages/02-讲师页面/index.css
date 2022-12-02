@@ -13,7 +13,7 @@ html {
   min-width: 1205px;
   background-image: url("../../assets/images/bg_nav_rep.png");
   background-repeat: repeat-x;
-  z-index: 99;
+  z-index: 999;
 }
 .mini-navbar .navbar-container {
   height: 100%;
@@ -181,6 +181,7 @@ html {
   position: absolute;
   right: 0;
   border-radius: 5px;
+  z-index: 999;
 }
 .mini-navbar .navbar-container .right-user-info .right-login .box .panel > ul {
   border-radius: 5px;
@@ -229,6 +230,10 @@ html {
   height: 40px;
   background: linear-gradient(#f7f6f8, #ffffff 20%);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
 }
 .screen-bar .screen-container {
   height: 100%;
