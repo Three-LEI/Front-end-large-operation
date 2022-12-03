@@ -223,168 +223,103 @@ html {
   top: -20px;
   right: 10px;
 }
-/*筛选条*/
-.screen-bar {
+/*面包屑导航*/
+.crumbs-bar {
   width: 100%;
-  min-width: 1205px;
-  height: 40px;
-  background: linear-gradient(#f7f6f8, #ffffff 20%);
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  height: 50px;
+  background-color: #ffffff;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 99;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
 }
-.screen-bar .screen-container {
+.crumbs-bar .nav-bar-content {
   height: 100%;
 }
-.screen-bar .screen-container dl {
+.crumbs-bar .nav-bar-content ul {
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.screen-bar .screen-container dl dt {
+.crumbs-bar .nav-bar-content ul li {
   color: var(--mianTextColor);
 }
-.screen-bar .screen-container dl dd {
-  height: 30px;
-  line-height: 30px;
-  color: var(--darkText);
-  padding: 0 10px;
-  margin-left: 10px;
-  border: 1px solid transparent;
-  cursor: pointer;
+.crumbs-bar .nav-bar-content ul li a {
+  color: var(--mianTextColor);
 }
-.screen-bar .screen-container dl dd.selected {
-  border: 1px solid var(--themColor);
-  border-radius: 5px;
+.crumbs-bar .nav-bar-content ul li a:hover {
   color: var(--themColor);
+}
+.crumbs-bar .nav-bar-content ul li:not(:first-child)::before {
+  content: ">";
+  padding: 0 10px;
 }
 /*星级讲师卡片条*/
 main {
   min-height: 650px;
 }
-main .lecturer-card-container {
+main .news-list {
+  display: block;
   width: 100%;
   min-width: 1205px;
-  height: 200px;
-  padding: 10px;
+  background-color: #ffffff;
   border-radius: 5px;
+  padding: 5px 10px 10px 10px;
+  margin: 20px 0;
   box-sizing: border-box;
-  background-color: #fff;
-  margin: 10px 0;
+  transition: all 0.3s;
 }
-main .lecturer-card-container .top-lecturer-info {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
+main .news-list:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content {
-  flex: 4;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .head-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-left: 10px;
-  overflow: hidden;
-  box-sizing: border-box;
-  border: 1px solid var(--themColor);
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .head-img img {
-  width: 100%;
-  height: 100%;
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .lecturer-name {
-  flex: 1;
-  width: 100%;
-  height: 70px;
-  padding-left: 20px;
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .lecturer-name .name {
-  width: fit-content;
-  max-width: 800px;
-  margin-top: 10px;
-  font-size: 20px;
-  padding-right: 100px;
-  color: #442a07;
-  font-weight: bold;
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .lecturer-name .name.star-lecturer::after {
-  display: inline-block;
-  content: "★星级讲师★";
-  padding: 0 5px;
-  height: 23px;
-  border-radius: 3px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 23px;
-  vertical-align: top;
-  margin-left: 20px;
-  color: #442a07;
-  background-image: linear-gradient(25deg, #e99415, #eda724, #eed134, #eafa44);
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .lecturer-name .name.beauty-lecturer::after {
-  display: inline-block;
-  content: "★美少女讲师★";
-  padding: 0 5px;
-  height: 23px;
-  border-radius: 3px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 23px;
-  vertical-align: top;
-  margin-left: 20px;
-  color: #442a07;
-  background-image: linear-gradient(25deg, #fc4ba9, #ff8ea5, #ffc39f, #fff496);
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .lecturer-name .name.sun-lecturer::after {
-  display: inline-block;
-  content: "★新晋讲师★";
-  padding: 0 5px;
-  height: 23px;
-  border-radius: 3px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 23px;
-  vertical-align: top;
-  margin-left: 20px;
-  color: #442a07;
-  background: linear-gradient(to right, #a8ff78, #78ffd6);
-}
-main .lecturer-card-container .top-lecturer-info .left-lecturer-content .lecturer-name .kc {
-  margin-top: 10px;
-  font-size: 12px;
-  color: var(--mianTextColor);
-}
-main .lecturer-card-container .top-lecturer-info .right-home-link {
-  padding: 0 10px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-main .lecturer-card-container .top-lecturer-info .right-home-link a {
-  display: block;
-  width: 100px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 5px;
+main .news-list:hover > .news-list-title > .left-title {
   color: var(--themColor);
-  border: 1px solid var(--themColor);
 }
-main .lecturer-card-container .bottom-introduction {
-  width: 100%;
-  height: 50%;
+main .news-list .news-list-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  border-bottom: 1px solid var(--borderColor);
+}
+main .news-list .news-list-title .left-title {
+  padding-left: 10px;
+  flex: 1;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--darkText);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: color 0.3s;
+}
+main .news-list .news-list-title .right-date {
+  width: 100px;
+  line-height: 50px;
+  font-size: 14px;
   color: var(--mianTextColor);
-  border-top: 1px solid var(--borderColor);
+  text-align: center;
+}
+main .news-list .news-list-content .text {
   line-height: 20px;
-  box-sizing: border-box;
-  padding: 10px;
+  text-indent: 2em;
+  text-align: justify;
+  color: var(--mianTextColor);
+  margin-top: 10px;
+}
+main .news-list .news-img-list {
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 800px;
+  color: var(--borderColor);
+}
+main .news-list .news-img-list img {
+  height: 100px;
 }
 /*底部*/
 footer {

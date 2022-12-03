@@ -229,39 +229,34 @@ html {
   }
 }
 
-/*筛选条*/
-.screen-bar {
+/*面包屑导航*/
+.crumbs-bar {
   width: 100%;
-  min-width: 1205px;
-  height: 40px;
-  background: linear-gradient(#f7f6f8, #ffffff 20%);
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  height: 50px;
+  background-color: #ffffff;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 99;
-  .screen-container {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  .nav-bar-content {
     height: 100%;
-    dl {
-      //line-height: 40px;
+    ul {
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
-      dt {
+      li {
         color: var(--mianTextColor);
-      }
-      dd {
-        height: 30px;
-        line-height: 30px;
-        color: var(--darkText);
-        padding: 0 10px;
-        margin-left: 10px;
-        border: 1px solid transparent;
-        cursor: pointer;
-        &.selected {
-          border: 1px solid var(--themColor);
-          border-radius: 5px;
-          color: var(--themColor);
+        a {
+          color: var(--mianTextColor);
+          &:hover {
+            color: var(--themColor);
+          }
+        }
+        &:not(:first-child)::before {
+          content: ">";
+          padding: 0 10px;
         }
       }
     }
@@ -271,127 +266,67 @@ html {
 /*星级讲师卡片条*/
 main {
   min-height: 650px;
-  .lecturer-card-container {
+  .news-list {
+    display: block;
     width: 100%;
     min-width: 1205px;
-    height: 200px;
-    padding: 10px;
+    background-color: #ffffff;
     border-radius: 5px;
+    padding: 5px 10px 10px 10px;
+    margin: 20px 0;
     box-sizing: border-box;
-    background-color: #fff;
-    margin: 10px 0;
-    .top-lecturer-info {
-      width: 100%;
-      height: 50%;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(1.01);
+    }
+    &:hover > .news-list-title > .left-title{
+      color: var(--themColor);
+    }
+    .news-list-title {
       display: flex;
-      align-items: center;
-      .left-lecturer-content {
-        flex: 4;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        .head-img {
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          margin-left: 10px;
-          overflow: hidden;
-          box-sizing: border-box;
-          border: 1px solid var(--themColor);
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .lecturer-name {
-          flex: 1;
-          width: 100%;
-          height: 70px;
-          padding-left: 20px;
-          //background-color: greenyellow;
-          .name {
-            width: fit-content;
-            max-width: 800px;
-            margin-top: 10px;
-            font-size: 20px;
-            padding-right: 100px;
-            color: #442a07;
-            font-weight: bold;
-            &.star-lecturer::after {
-              display: inline-block;
-              content: "★星级讲师★";
-              padding: 0 5px;
-              height: 23px;
-              border-radius: 3px;
-              font-size: 12px;
-              text-align: center;
-              line-height: 23px;
-              vertical-align: top;
-              margin-left: 20px;
-              color: #442a07;
-              background-image: linear-gradient(25deg, #e99415, #eda724, #eed134, #eafa44);
-            }
-            &.beauty-lecturer::after {
-              display: inline-block;
-              content: "★美少女讲师★";
-              padding: 0 5px;
-              height: 23px;
-              border-radius: 3px;
-              font-size: 12px;
-              text-align: center;
-              line-height: 23px;
-              vertical-align: top;
-              margin-left: 20px;
-              color: #442a07;
-              background-image: linear-gradient(25deg, #fc4ba9, #ff8ea5, #ffc39f, #fff496)
-            }
-            &.sun-lecturer::after {
-              display: inline-block;
-              content: "★新晋讲师★";
-              padding: 0 5px;
-              height: 23px;
-              border-radius: 3px;
-              font-size: 12px;
-              text-align: center;
-              line-height: 23px;
-              vertical-align: top;
-              margin-left: 20px;
-              color: #442a07;
-              background: linear-gradient(to right, #a8ff78, #78ffd6);
-            }
-          }
-          .kc {
-            margin-top: 10px;
-            font-size: 12px;
-            color: var(--mianTextColor);
-          }
-        }
+      justify-content: space-between;
+      line-height: 30px;
+      border-bottom: 1px solid var(--borderColor);
+      .left-title {
+        padding-left: 10px;
+        flex: 1;
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--darkText);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: color 0.3s;
       }
-      .right-home-link {
-        padding: 0 10px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        a {
-          display: block;
-          width: 100px;
-          height: 40px;
-          line-height: 40px;
-          text-align: center;
-          border-radius: 5px;
-          color: var(--themColor);
-          border: 1px solid var(--themColor);
-        }
+      .right-date {
+        width: 100px;
+        line-height: 50px;
+        font-size: 14px;
+        color: var(--mianTextColor);
+        text-align: center;
       }
     }
-    .bottom-introduction {
-      width: 100%;
-      height: 50%;
-      color: var(--mianTextColor);
-      border-top: 1px solid var(--borderColor);
-      line-height: 20px;
-      box-sizing: border-box;
-      padding: 10px;
+    .news-list-content {
+      .text {
+        line-height: 20px;
+        text-indent: 2em;
+        text-align: justify;
+        color: var(--mianTextColor);
+        margin-top: 10px;
+      }
+    }
+    .news-img-list {
+      margin-top: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 800px;
+      color: var(--borderColor);
+      img {
+        height: 100px;
+      }
     }
   }
 }

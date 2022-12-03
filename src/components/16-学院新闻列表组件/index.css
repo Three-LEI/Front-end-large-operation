@@ -46,6 +46,7 @@
 .news-list .news-list-content .text {
   line-height: 20px;
   text-indent: 2em;
+  text-align: justify;
   color: var(--mianTextColor);
   margin-top: 10px;
 }
@@ -59,6 +60,5 @@
 }
 .news-list .news-img-list img {
   height: 100px;
-  border: 1px solid var(--borderColor);
 }
 /*# sourceMappingURL=index.css.map */
