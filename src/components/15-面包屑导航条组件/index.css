@@ -1,0 +1,30 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+.crumbs-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+}
+.crumbs-bar .nav-bar-content {
+  height: 100%;
+}
+.crumbs-bar .nav-bar-content ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.crumbs-bar .nav-bar-content ul li {
+  color: var(--mianTextColor);
+}
+.crumbs-bar .nav-bar-content ul li a {
+  color: var(--mianTextColor);
+}
+.crumbs-bar .nav-bar-content ul li a:hover {
+  color: var(--themColor);
+}
+.crumbs-bar .nav-bar-content ul li:not(:first-child)::before {
+  content: ">";
+  padding: 0 10px;
+}
+/*# sourceMappingURL=index.css.map */
