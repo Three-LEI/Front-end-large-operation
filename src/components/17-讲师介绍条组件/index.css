@@ -13,7 +13,7 @@
   align-items: center;
 }
 .top-lecturer-intro-bar .intro-bar-container .lecturer-head-img {
-  border: 5px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
   width: 100px;
   height: 100px;
   border-radius: 5px;
@@ -34,14 +34,27 @@
 }
 .top-lecturer-intro-bar .intro-bar-container .name-and-intro .name {
   color: #fff;
-  font-size: 20px;
-  font-weight: bold;
+  height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 1075px;
-  line-height: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+}
+.top-lecturer-intro-bar .intro-bar-container .name-and-intro .name h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.top-lecturer-intro-bar .intro-bar-container .name-and-intro .name .lecturer-tags {
+  display: inline-block;
+  padding: 2px 5px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  font-size: 12px;
+  border-radius: 5px;
 }
 .top-lecturer-intro-bar .intro-bar-container .name-and-intro .intro {
   font-size: 14px;
