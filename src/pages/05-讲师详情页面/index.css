@@ -12,6 +12,9 @@ html {
   width: 100%;
   min-width: 1205px;
   background-image: url("../../assets/images/bg_nav_rep.png");
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   background-repeat: repeat-x;
   z-index: 999;
 }

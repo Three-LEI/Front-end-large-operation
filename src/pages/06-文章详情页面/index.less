@@ -263,81 +263,57 @@ html {
   }
 }
 
-/*新闻卡片条*/
+/*新闻详情内容*/
 main {
   min-height: 650px;
-  .news-list {
-    display: block;
-    width: 100%;
-    min-width: 1205px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 5px 10px 10px 10px;
-    margin: 20px 0;
+  .article-content {
     box-sizing: border-box;
-    transition: all 0.3s;
-    &:hover {
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-      transform: scale(1.01);
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    .article-title {
+      margin-top: 20px;
+      font-size: 35px;
+      text-align: center;
     }
-    &:hover > .news-list-title > .left-title{
-      color: var(--themColor);
-    }
-    .news-list-title {
-      display: flex;
-      justify-content: space-between;
-      line-height: 30px;
-      border-bottom: 1px solid var(--borderColor);
-      .left-title {
-        padding-left: 10px;
-        flex: 1;
-        line-height: 50px;
-        font-size: 20px;
-        font-weight: bold;
-        color: var(--darkText);
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        transition: color 0.3s;
-      }
-      .right-date {
-        width: 150px;
-        line-height: 50px;
-        font-size: 14px;
-        color: var(--mianTextColor);
-        text-align: center;
-      }
-    }
-    .news-list-content {
-      .text {
-        line-height: 20px;
-        text-indent: 2em;
-        text-align: justify;
-        color: var(--mianTextColor);
-        margin-top: 10px;
-      }
-    }
-    .news-img-list {
+    .article-time {
       margin-top: 10px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 1205px;
-      color: var(--borderColor);
-      img {
-        height: 100px;
-      }
-      .browse-count {
-        margin-top: 5px;
-        //margin-right: 20px;
-        text-align: center;
-        font-size: 12px;
-        span,
-        .icon-liulan {
-          vertical-align: middle;
-        }
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: var(--mianTextColor);
+      text-align: center;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      margin: 10px 0;
+    }
+    p {
+      color: var(--darkText);
+      line-height: 25px;
+      text-align: justify;
+      text-indent: 2em;
+    }
+    img {
+      margin: 10px 0;
+      height: 500px;
+    }
+    .browse-count {
+      color: var(--themColor);
+      margin-top: 5px;
+      //margin-right: 20px;
+      text-align: center;
+      font-size: 14px;
+      span,
+      .icon-liulan {
+        vertical-align: middle;
       }
     }
   }
+
 }
 
 /*底部*/

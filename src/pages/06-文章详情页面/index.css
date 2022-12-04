@@ -256,77 +256,54 @@ html {
   content: ">";
   padding: 0 10px;
 }
-/*新闻卡片条*/
+/*新闻详情内容*/
 main {
   min-height: 650px;
 }
-main .news-list {
-  display: block;
-  width: 100%;
-  min-width: 1205px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 5px 10px 10px 10px;
-  margin: 20px 0;
+main .article-content {
   box-sizing: border-box;
-  transition: all 0.3s;
+  margin: 30px 0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
 }
-main .news-list:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.01);
+main .article-content .article-title {
+  margin-top: 20px;
+  font-size: 35px;
+  text-align: center;
 }
-main .news-list:hover > .news-list-title > .left-title {
-  color: var(--themColor);
-}
-main .news-list .news-list-title {
-  display: flex;
-  justify-content: space-between;
-  line-height: 30px;
-  border-bottom: 1px solid var(--borderColor);
-}
-main .news-list .news-list-title .left-title {
-  padding-left: 10px;
-  flex: 1;
-  line-height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--darkText);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition: color 0.3s;
-}
-main .news-list .news-list-title .right-date {
-  width: 150px;
-  line-height: 50px;
+main .article-content .article-time {
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 14px;
   color: var(--mianTextColor);
   text-align: center;
 }
-main .news-list .news-list-content .text {
-  line-height: 20px;
-  text-indent: 2em;
+main .article-content h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0;
+}
+main .article-content p {
+  color: var(--darkText);
+  line-height: 25px;
   text-align: justify;
-  color: var(--mianTextColor);
-  margin-top: 10px;
+  text-indent: 2em;
 }
-main .news-list .news-img-list {
-  margin-top: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 1205px;
-  color: var(--borderColor);
+main .article-content img {
+  margin: 10px 0;
+  height: 500px;
 }
-main .news-list .news-img-list img {
-  height: 100px;
-}
-main .news-list .news-img-list .browse-count {
+main .article-content .browse-count {
+  color: var(--themColor);
   margin-top: 5px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
-main .news-list .news-img-list .browse-count span,
-main .news-list .news-img-list .browse-count .icon-liulan {
+main .article-content .browse-count span,
+main .article-content .browse-count .icon-liulan {
   vertical-align: middle;
 }
 /*底部*/
