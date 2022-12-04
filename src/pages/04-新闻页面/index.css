@@ -256,7 +256,7 @@ html {
   content: ">";
   padding: 0 10px;
 }
-/*星级讲师卡片条*/
+/*新闻卡片条*/
 main {
   min-height: 650px;
 }
@@ -314,12 +314,20 @@ main .news-list .news-img-list {
   margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 800px;
+  max-width: 1205px;
   color: var(--borderColor);
 }
 main .news-list .news-img-list img {
   height: 100px;
+}
+main .news-list .news-img-list .browse-count {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+main .news-list .news-img-list .browse-count span,
+main .news-list .news-img-list .browse-count .icon-liulan {
+  vertical-align: middle;
 }
 /*底部*/
 footer {

@@ -53,12 +53,20 @@
 .news-list .news-img-list {
   margin-top: 10px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 800px;
+  max-width: 1205px;
   color: var(--borderColor);
 }
 .news-list .news-img-list img {
   height: 100px;
+}
+.news-list .news-img-list .browse-count {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+.news-list .news-img-list .browse-count span,
+.news-list .news-img-list .browse-count .icon-liulan {
+  vertical-align: middle;
 }
 /*# sourceMappingURL=index.css.map */
