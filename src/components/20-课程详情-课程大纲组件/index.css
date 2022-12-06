@@ -1,0 +1,72 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+.outline {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.outline::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #aaaaaa;
+  position: absolute;
+  top: 0;
+  left: 59px;
+  z-index: 1;
+}
+.outline li {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 0;
+  color: var(--mianTextColor);
+  cursor: default;
+  transition: all 0.3s;
+}
+.outline li:hover {
+  color: var(--themColor);
+}
+.outline li:hover .right-bottom {
+  color: var(--themColor);
+  border-color: var(--themColor);
+}
+.outline li .c-number {
+  width: 50px;
+  font-size: 12px;
+}
+.outline li .point {
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+  background-image: url("../../assets/images/listIcons.png");
+  background-position: -136px -80px;
+  z-index: 9;
+}
+.outline li .point.watch-half {
+  background-position: -168px -80px;
+}
+.outline li .point.complete {
+  background-position: -200px -80px;
+}
+.outline li .title-text {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.outline li .right-bottom {
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var(--mianTextColor);
+  color: var(--mianTextColor);
+  transition: all 0.3s;
+}
+.outline li .right-bottom.no-show {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */
