@@ -3,35 +3,33 @@
 
 .course-panel-container {
   width: 100%;
-  height: 500px;
-  min-height: 500px;
-  background-color: #eed134;
+  min-height: 600px;
+  //background-color: #eed134;
   .head-panel-options {
     width: 100%;
     height: 50px;
     line-height: 50px;
     display: flex;
     padding-left: 20px;
+    box-sizing: border-box;
     background-color: #fff;
     margin-bottom: 20px;
     li {
-      a {
-        display: block;
-        padding: 0 15px;
-        color: var(--darkText);
-        transition: all 0.3s;
-        //background-color: #10ac84;
-        &.choose {
-          color: #fff;
-          background-color: var(--mianTextColor);
-          &:hover {
-            background-color: var(--themColor);
-            color: #fff;
-          }
-        }
+      padding: 0 15px;
+      color: var(--darkText);
+      transition: all 0.3s;
+      cursor: pointer;
+      //background-color: #10ac84;
+      &.choose {
+        color: #fff;
+        background-color: var(--mianTextColor);
         &:hover {
-          color: var(--themColor);
+          background-color: var(--themColor);
+          color: #fff;
         }
+      }
+      &:hover {
+        color: var(--themColor);
       }
     }
   }
@@ -39,23 +37,19 @@
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #78ffd6;
+    //background-color: #78ffd6;
     .left-course-content {
       flex: 1;
       height: 100%;
-      background-color: #10ac84;
+      //background-color: #10ac84;
       margin-right: 20px;
-      position: relative;
       li {
         display: none;
-        position: absolute;
         padding: 20px;
         box-sizing: border-box;
         width: 100%;
         height: 100%;
-        background-color: #333333;
-        left: 0;
-        top: 0;
+        background-color: #fff;
         &.choose {
           display: block;
         }
@@ -64,7 +58,7 @@
     .right-comments {
       width: 280px;
       height: 100%;
-      background-color: #fc4ba9;
+      background-color: #fff;
     }
   }
 }

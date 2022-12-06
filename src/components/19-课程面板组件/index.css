@@ -2,9 +2,7 @@
 @import url(../../config/colorConfig.css);
 .course-panel-container {
   width: 100%;
-  height: 500px;
-  min-height: 500px;
-  background-color: #eed134;
+  min-height: 600px;
 }
 .course-panel-container .head-panel-options {
   width: 100%;
@@ -12,49 +10,44 @@
   line-height: 50px;
   display: flex;
   padding-left: 20px;
+  box-sizing: border-box;
   background-color: #fff;
   margin-bottom: 20px;
 }
-.course-panel-container .head-panel-options li a {
-  display: block;
+.course-panel-container .head-panel-options li {
   padding: 0 15px;
   color: var(--darkText);
   transition: all 0.3s;
+  cursor: pointer;
 }
-.course-panel-container .head-panel-options li a.choose {
+.course-panel-container .head-panel-options li.choose {
   color: #fff;
   background-color: var(--mianTextColor);
 }
-.course-panel-container .head-panel-options li a.choose:hover {
+.course-panel-container .head-panel-options li.choose:hover {
   background-color: var(--themColor);
   color: #fff;
 }
-.course-panel-container .head-panel-options li a:hover {
+.course-panel-container .head-panel-options li:hover {
   color: var(--themColor);
 }
 .course-panel-container .bottom-container {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #78ffd6;
 }
 .course-panel-container .bottom-container .left-course-content {
   flex: 1;
   height: 100%;
-  background-color: #10ac84;
   margin-right: 20px;
-  position: relative;
 }
 .course-panel-container .bottom-container .left-course-content li {
   display: none;
-  position: absolute;
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-color: #333333;
-  left: 0;
-  top: 0;
+  background-color: #fff;
 }
 .course-panel-container .bottom-container .left-course-content li.choose {
   display: block;
@@ -62,6 +55,6 @@
 .course-panel-container .bottom-container .right-comments {
   width: 280px;
   height: 100%;
-  background-color: #fc4ba9;
+  background-color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

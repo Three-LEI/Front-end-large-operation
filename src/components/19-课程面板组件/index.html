@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <title>课程面板组件</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
     <main class="bx">
         <div class="course-panel-container">
             <ul class="head-panel-options">
-                <li><a href="#" class="choose">课程介绍</a></li>
-                <li><a href="#" class="">课程大纲</a></li>
+                <li class="choose">课程介绍</li>
+                <li>课程大纲</li>
             </ul>
             <div class="bottom-container">
                 <ul class="left-course-content">
-                    <li class="choose">课程介绍</li>
-                    <li class="">课程大纲</li>
+                    <li class="choose">
+                        <h4>动漫泳装的绘制技巧</h4>
+                        <p>讲师：淚泪泪</p>
+                        <p>发布时间：2020-10-21 14:20:03</p>
+                        <p>
+                            本教程适用于有基础的同学，如果对于绘画没有任何基础的同学，请移步至“日系动漫绘画零基础教程”
+                            先把基础的教程看完了先，并且能自由原创人物作品时，再来观看本教程，将会受益匪浅。
+                            <br>
+                            本教程从不同体型的人体结构出发，绘制不同体型的泳装，也需要学员对人体结构有一定的了解和深入
+                            不然的话，可能会比较懵逼，但是“无他，为手熟尔”，只要多练习，相信你还是可以跟上来的。
+                        </p>
+                    </li>
+                    <li class="">
+                        课程大纲
+                    </li>
                 </ul>
-                <div class="right-comments">评论</div>
+                <div class="right-comments">
+                    <p>评论1</p>
+                    <p>评论2</p>
+                </div>
             </div>
         </div>
     </main>
+<script>
+    let currentIndex = 0;
+
+    let tabs = document.querySelectorAll(".head-panel-options>li");
+    let panes = document.querySelectorAll(".bottom-container>.left-course-content>li");
+
+    for (let i = 0, len=tabs.length; i < len; i++) {
+        let tab = tabs[i];
+        tab.onclick = function () {
+            tabs[currentIndex].className = "";
+            tabs[i].className = "choose";
+
+            panes[currentIndex].className = "";
+            panes[i].className = "choose";
+            currentIndex = i;
+        }
+    }
+
+</script>
 </body>
 </html>
