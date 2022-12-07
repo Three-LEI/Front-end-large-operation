@@ -37,6 +37,7 @@
   height: 100%;
   background-image: url("../../assets/images/layout_css_sprites.png");
   background-position: -11px -158px;
+  transition: width 0.3s linear;
 }
 .comments-container .comments-content label textarea {
   box-sizing: border-box;
@@ -47,6 +48,7 @@
   outline: none;
   font-size: 14px;
   border-radius: 5px;
+  border-color: var(--borderColor);
 }
 .comments-container .comments-content .comments-button {
   margin-left: auto;

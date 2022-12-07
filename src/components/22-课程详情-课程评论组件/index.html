@@ -12,14 +12,35 @@
             <div class="top">
                 <span class="txt">给该课程打分：</span>
                 <div class="star">
-                    <div class="yellow-star" style="width: 50%"></div>
+                    <div class="yellow-star" style="width: 100%"></div>
                 </div>
             </div>
             <label>
-                <textarea placeholder="请输入对该课程的评价"></textarea>
+                <textarea placeholder="请输入对该课程的评价" class="com-content"></textarea>
             </label>
             <div class="comments-button">评论</div>
         </div>
     </div>
+<script>
+    let score = 5;
+    let star = document.getElementsByClassName("star")[0];
+    let y_star = document.getElementsByClassName("yellow-star")[0];
+
+    star.onclick = function (event) {
+        score = Math.ceil(event.offsetX / star.offsetWidth * 5);
+        y_star.style.width = score / 5 * 100 + "%";
+    }
+</script>
+<script>
+    let submit = document.getElementsByClassName("comments-button")[0];
+    let content = document.getElementsByClassName("com-content")[0];
+
+    submit.onclick = function () {
+        console.log("分数：", score);
+        let content_c = content.value;
+        console.log("评论内容：", content_c);
+    }
+
+</script>
 </body>
 </html>
