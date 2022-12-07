@@ -1,0 +1,63 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+.comments-container {
+  width: 290px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.comments-container .comments-head-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.comments-container .comments-content {
+  flex: 1;
+}
+.comments-container .comments-content .top {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.comments-container .comments-content .top .txt {
+  font-size: 14px;
+}
+.comments-container .comments-content .top .star {
+  width: 56px;
+  height: 9px;
+  background-image: url("../../assets/images/layout_css_sprites.png");
+  background-position: -92px -58px;
+  margin-right: 10px;
+}
+.comments-container .comments-content .top .star .yellow-star {
+  height: 100%;
+  background-image: url("../../assets/images/layout_css_sprites.png");
+  background-position: -11px -158px;
+  transition: width 0.3s linear;
+}
+.comments-container .comments-content label textarea {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  border-color: var(--borderColor);
+}
+.comments-container .comments-content .comments-button {
+  margin-left: auto;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 30px;
+  border-radius: 5px;
+  color: var(--themColor);
+  border: 1px solid var(--themColor);
+}
+/*# sourceMappingURL=index.css.map */

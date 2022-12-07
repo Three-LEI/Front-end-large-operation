@@ -21,26 +21,6 @@
             <div class="comments-button">评论</div>
         </div>
     </div>
-<script>
-    let score = 5;
-    let star = document.querySelector(".comments-container .star");
-    let y_star = document.querySelector(".comments-container .yellow-star");
 
-    star.onclick = function (event) {
-        score = Math.ceil(event.offsetX / star.offsetWidth * 5);
-        y_star.style.width = score / 5 * 100 + "%";
-    }
-</script>
-<script>
-    let submit = document.querySelector(".comments-container .comments-button");
-    let content = document.querySelector(".comments-container .com-content");
-
-    submit.onclick = function () {
-        console.log("分数：", score);
-        let content_c = content.value;
-        console.log("评论内容：", content_c);
-    }
-
-</script>
 </body>
 </html>
