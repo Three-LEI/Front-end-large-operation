@@ -1,63 +1,81 @@
 @import url(../../css/base.css);
 @import url(../../config/colorConfig.css);
-.comments-container {
+.comments-list {
   width: 290px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 0 15px 15px 15px;
+  padding: 0 15px 5px 15px;
   display: flex;
   flex-direction: column;
 }
-.comments-container .comments-head-title {
+.comments-list .comments-head-title {
   width: 100%;
   height: 40px;
   line-height: 40px;
   border-bottom: 1px solid var(--borderColor);
 }
-.comments-container .comments-content {
-  flex: 1;
+.comments-list .comments-list-container {
+  width: 100%;
+  margin: 5px 0 0 0;
 }
-.comments-container .comments-content .top {
-  display: flex;
-  align-items: center;
+.comments-list .comments-list-container .comments-items {
   margin: 10px 0;
 }
-.comments-container .comments-content .top .txt {
-  font-size: 14px;
+.comments-list .comments-list-container .comments-items:not(:last-child) {
+  border-bottom: 1px solid var(--lightBorder);
 }
-.comments-container .comments-content .top .star {
+.comments-list .comments-list-container .comments-items .top-info {
+  display: flex;
+  margin-bottom: 10px;
+}
+.comments-list .comments-list-container .comments-items .top-info .left-head-img {
+  width: 35px;
+  height: 35px;
+}
+.comments-list .comments-list-container .comments-items .top-info .left-head-img img {
+  width: 35px;
+  height: 35px;
+}
+.comments-list .comments-list-container .comments-items .top-info .right {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.comments-list .comments-list-container .comments-items .top-info .right .top-user-name {
+  display: flex;
+  align-items: center;
+}
+.comments-list .comments-list-container .comments-items .top-info .right .top-user-name span {
+  flex: 1;
+  font-size: 16px;
+}
+.comments-list .comments-list-container .comments-items .top-info .right .top-user-name .star {
   width: 56px;
   height: 9px;
   background-image: url("../../assets/images/layout_css_sprites.png");
   background-position: -92px -58px;
-  margin-right: 10px;
 }
-.comments-container .comments-content .top .star .yellow-star {
+.comments-list .comments-list-container .comments-items .top-info .right .top-user-name .star .yellow-star {
   height: 100%;
   background-image: url("../../assets/images/layout_css_sprites.png");
   background-position: -11px -158px;
   transition: width 0.3s linear;
 }
-.comments-container .comments-content label textarea {
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  width: 100%;
-  height: 100px;
-  resize: none;
-  outline: none;
-  font-size: 14px;
-  border-radius: 5px;
-  border-color: var(--borderColor);
+.comments-list .comments-list-container .comments-items .top-info .right .bottom-time {
+  flex: 1;
+  font-size: 12px;
+  margin-top: auto;
+  color: var(--borderColor);
+  display: flex;
+  align-items: flex-end;
 }
-.comments-container .comments-content .comments-button {
-  margin-left: auto;
-  width: 60px;
-  text-align: center;
-  cursor: pointer;
-  line-height: 30px;
-  border-radius: 5px;
-  color: var(--themColor);
-  border: 1px solid var(--themColor);
+.comments-list .comments-list-container .comments-items .bottom-content {
+  width: 100%;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=index.css.map */
