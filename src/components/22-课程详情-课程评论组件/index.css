@@ -8,6 +8,7 @@
   padding: 0 15px 15px 15px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 .comments-container .comments-head-title {
   width: 100%;
