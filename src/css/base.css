@@ -5,6 +5,10 @@
   --bxSize: 1205px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bx {
   margin: 0 auto;
   width: 1205px;
