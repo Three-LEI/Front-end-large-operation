@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>课程详情页面</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--迷你导航条-->
+    <div class="mini-navbar">
+        <div class="navbar-container bx">
+            <div class="left-logo-container">
+                <div class="logo"><a href="#"><img src="../../assets/images/logo-mini.png" alt=""></a></div>
+                <ul>
+                    <li class="item"><a href="#">讲师</a></li>
+                    <li class="item"><a href="#">课程</a></li>
+                    <li class="item"><a href="#">新闻</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="center-search-container">
+                    <div class="center-search">
+                        <div class="down-menu">
+                            <label>
+                                <select name="category">
+                                    <option value="all">全部</option>
+                                    <option value="course">课程</option>
+                                    <option value="lecturer">讲师</option>
+                                    <option value="article">文章</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="search">
+                            <label>
+                                <input type="text" placeholder="请输入关键字" name="searchContent">
+                            </label>
+                        </div>
+                        <div class="search-button iconfont">
+                            <input type="submit" value="&#xe8b9;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="right-user-info">
+                <div class="right-login">
+                    <div class="box">
+                        <div class="login-box">
+                            <span class="user-name"><i class="iconfont">&#xe60c;</i>淚泪泪</span>
+                            <img src="../../assets/images/派蒙头像.png" alt="" class="user-head-img">
+                        </div>
+                        <div class="panel">
+                            <ul>
+                                <li class="item"><a href="https://xlsir.zcool.com.cn/">xlsir.zcool.com.cn</a></li>
+                                <li class="item"><a href="#">我的学习</a></li>
+                                <li class="item"><a href="#">我的优惠卷</a></li>
+                                <li class="item"><a href="#">设置</a></li>
+                                <li class="item"><a href="#">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程详情容器-->
+    <main>
+        <div class="course-play-container">
+            <div class="left">
+                <div class="video-box-top">
+                    <a href="#" class="return-tags">
+                        <span class="iconfont icon-zuojiantou1"></span>返回课程主页
+                    </a>
+                </div>
+                <div class="video-box">
+                    <div class="current-video-title">第1节: 动漫绘画-必备基础-概述</div>
+                    <div class="video-container">
+                        <div id="player"></div>
+                    </div>
+                </div>
+                <div class="video-box-bottom">
+                    <div class="last-video">上一集</div>
+                    <div class="next-video">下一集</div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top-title">课程目录</div>
+                <div class="course-list">
+                    <ul class="outline no-show">
+                        <li>
+                            <span class="c-number">课时1</span>
+                            <span class="point complete"></span>
+                            <span class="title-text">动漫绘画-必备基础-概述</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时2</span>
+                            <span class="point watch-half"></span>
+                            <span class="title-text">绘画必备基础-光与影</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时3</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-板绘控笔练习1</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时4</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-板绘控笔练习2</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时5</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-板绘控笔练习3</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时6</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构概述</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时7</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-头部结构</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时8</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-身体结构</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时9</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-腿部结构</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时10</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-脚部结构</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时11</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-整体拼接</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时12</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-肌肉结构</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时13</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-二头肌拆分</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时14</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-男性腹部肌肉</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时15</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-人体结构-女性腹部肌肉</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时16</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-火柴人的学习方法</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时17</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-火柴人的比例</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时18</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-火柴人的动态</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时19</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画基础-火柴人的认识与绘制</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时20</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-基本透视法</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时21</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-物体的透视法则</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时22</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-物体的形变透视法则综合运用</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时23</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-一幅画的视平线在哪？</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时24</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-几何人体躯干部画法</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时25</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-几何人当中的点</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时26</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-人体的躯干和下肢</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时27</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-人体的手臂绘画及修改方法1</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时28</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-人体的手臂绘画及修改方法2</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时29</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-如何通过参考画人物</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时30</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-人物衣服装备的绘制</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时31</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-不同国家不同泳装鉴赏</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时32</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-死库水的绘制逻辑</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时33</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-比基尼泳装的绘制方法</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时34</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-将泳装与人物合并</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时35</span>
+                            <span class="point"></span>
+                            <span class="title-text">动漫绘画进阶-人物体型与不同泳装的搭配</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                        <li>
+                            <span class="c-number">课时36</span>
+                            <span class="point"></span>
+                            <span class="title-text">完结-大作业</span>
+                            <a href="#" class="right-bottom">立即观看</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--课程底部-->
+    <footer>
+        <div class="footer-container bx">
+            <div class="left-info">
+                <p class="company-info">二向箔云课堂 是三体教育（SANTI.com）旗下专注于星际武器研发的在线学习平台。</p>
+                <ul class="menu">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">撩课论坛</a></li>
+                </ul>
+                <p class="copyright-info">&copy;2022-2022 课程内容版权均归 三体教育 所有 三体ICP备18822299181</p>
+            </div>
+            <div class="right-info">
+                <div class="top-img">
+                    <div class="qq"><div class="qq-ewm ewm"><img src="../../assets/images/Three二维码.png" alt=""></div></div>
+                    <div class="wx"><div class="qq-ewm ewm"><img src="../../assets/images/Three二维码.png" alt=""></div></div>
+                </div>
+                <div class="center">
+                    <span>客服热线</span> 09:00 ~ 19:00
+                </div>
+                <div class="footer-phone">0755-6666-6666</div>
+            </div>
+        </div>
+    </footer>
+    <!--侧边栏-->
+    <div class="right-sidebar">
+        <div class="kf"></div>
+        <div class="app-download">
+            <div class="ewm"><img src="../../assets/images/Three二维码.png" alt=""></div>
+        </div>
+        <a class="return-top" href="#"></a>
+    </div>
+    <script src="DPlayer.min.js">
+    </script>
+    <script>
+        const dp = new DPlayer({
+            container: document.getElementById('player'),
+            video: {
+                url: '../../assets/videos/mda-mdsky6xcniccm3w8.mp4',
+            },
+        });
+    </script>
+</body>
+</html>
