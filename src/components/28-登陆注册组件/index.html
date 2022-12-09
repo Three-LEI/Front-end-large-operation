@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆注册组件</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-mask">
+        <div class="login-panel">
+            <div class="close"><div class="iconfont icon-guanbi"></div></div>
+            <ul class="options-panel">
+                <li class="current">账号登陆</li>
+                <li>立即注册</li>
+            </ul>
+            <ul class="form-panel">
+                <li class="current">
+                    <form action="">
+                        <label>
+                            <span class="iconfont icon-jurassic_user"></span>
+                            <input name="account" type="text" placeholder="请输入账号">
+                        </label>
+                        <label>
+                            <span class="iconfont icon-weibiaoti--"></span>
+                            <input name="pwd" type="password" placeholder="请输入密码">
+                        </label>
+                        <input type="submit" class="but" value="立即登陆">
+                    </form>
+                </li>
+                <li>
+                    <form action="">
+                        <label>
+                            <span class="iconfont icon-jurassic_user"></span>
+                            <input name="account" type="text" placeholder="请输入账号">
+                        </label>
+                        <label>
+                            <span class="iconfont icon-weibiaoti--"></span>
+                            <input name="pwd" type="password" placeholder="请输入密码">
+                        </label>
+                        <label>
+                            <span class="iconfont icon-tianchongxing-"></span>
+                            <input name="inspection_pwd" type="password" placeholder="请再次输入密码">
+                        </label>
+                        <input type="submit" class="but" value="立即注册">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+<script>
+    let currentIndex = 0;
+
+    let tabs = document.querySelectorAll(".login-panel > .options-panel > li");
+    let panes = document.querySelectorAll(".login-panel > .form-panel > li");
+
+    for (let i = 0, len = tabs.length; i < len; i++) {
+        let tab = tabs[i];
+        tab.onclick = function () {
+            tabs[currentIndex].className = "";
+            tab.className = "current";
+
+            panes[currentIndex].className = "";
+            panes[i].className = "current";
+
+            currentIndex = i;
+        }
+    }
+</script>
+</body>
+</html>
