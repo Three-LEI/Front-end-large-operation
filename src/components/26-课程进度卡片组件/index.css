@@ -1,0 +1,66 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+.card-hot-Good-Lesson {
+  width: 220px;
+  height: 230px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 50px auto;
+  transition: all 0.5s;
+}
+.card-hot-Good-Lesson a .top-images {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card-hot-Good-Lesson a .top-images img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  transition: all 0.5s;
+}
+.card-hot-Good-Lesson a .top-images:hover > img {
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+.card-hot-Good-Lesson a .bottom-content {
+  height: 50%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  color: var(--mianTextColor);
+  flex-direction: column;
+}
+.card-hot-Good-Lesson a .bottom-content .card-title {
+  color: var(--darkText);
+  font-size: 20px;
+  flex: 2;
+  font-weight: bold;
+}
+.card-hot-Good-Lesson a .bottom-content .progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--lightBorder);
+  border-radius: 5px;
+}
+.card-hot-Good-Lesson a .bottom-content .progress-bar .progress-value {
+  height: 100%;
+  background-color: var(--themColor);
+  border-radius: 5px;
+}
+.card-hot-Good-Lesson a .bottom-content .progress-txt {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 5px;
+  color: var(--themColor);
+}
+.card-hot-Good-Lesson:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=./index.css.map */
