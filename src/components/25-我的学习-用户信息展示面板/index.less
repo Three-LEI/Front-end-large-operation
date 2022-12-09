@@ -1,0 +1,36 @@
+@import url(../../css/base.css);
+@import url(../../config/colorConfig.css);
+
+.user-info-panel {
+    width: 100%;
+    min-width: 1205px;
+    height: 190px;
+    background-image: url(../../assets/images/banner6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    img {
+        width: 90px;
+        height: 90px;
+        background-color: #fff;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+    }
+    .user-name {
+        font-size: 20px;
+        color: #fff;
+    }
+    .user-signature {
+        width: 800px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
