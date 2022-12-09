@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻页面</title>
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
+    <meta name="keyword" content="全栈,Python,Javascript,前端,后端,动漫绘画,素描,C4D">
+    <meta name="description" content="撩课，是一家致力于打造高质量课程的平台！圆你Codeing梦！">
+</head>
+<body>
+    <!--迷你导航条-->
+    <div class="mini-navbar">
+        <div class="navbar-container bx">
+            <div class="left-logo-container">
+                <div class="logo"><a href="index.html"><img src="assets/images/logo-mini.png" alt=""></a></div>
+                <ul>
+                    <li class="item"><a href="teacher.html">讲师</a></li>
+                    <li class="item"><a href="course.html">课程</a></li>
+                    <li class="item current"><a href="news.html">新闻</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="center-search-container">
+                    <div class="center-search">
+                        <div class="down-menu">
+                            <label>
+                                <select name="category">
+                                    <option value="all">全部</option>
+                                    <option value="course">课程</option>
+                                    <option value="lecturer">讲师</option>
+                                    <option value="article">文章</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="search">
+                            <label>
+                                <input type="text" placeholder="请输入关键字" name="searchContent">
+                            </label>
+                        </div>
+                        <div class="search-button iconfont">
+                            <input type="submit" value="&#xe8b9;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="right-user-info">
+                <div class="right-login">
+                    <div class="box">
+                        <div class="login-box">
+                            <span class="user-name"><i class="iconfont">&#xe60c;</i>淚泪泪</span>
+                            <img src="assets/images/派蒙头像.png" alt="" class="user-head-img">
+                        </div>
+                        <div class="panel">
+                            <ul>
+                                <li class="item"><a href="https://xlsir.zcool.com.cn/">xlsir.zcool.com.cn</a></li>
+                                <li class="item"><a href="my-study.html">我的学习</a></li>
+                                <li class="item"><a href="#">我的优惠卷</a></li>
+                                <li class="item"><a href="#">设置</a></li>
+                                <li class="item"><a href="#" onclick="showMask()">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--面包屑导航-->
+    <div class="crumbs-bar">
+        <div class="nav-bar-content bx">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="news.html">文章列表</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主体内容-->
+    <main class="bx">
+        <a href="news-detail.html" class="news-list" title="点击查看新闻详情">
+            <div class="news-list-title">
+                <div class="left-title">雷军发布最新小米4，小米发烧已是梦！</div>
+                <div class="right-date">2023-01-01 13:50:36</div>
+            </div>
+            <div class="news-list-content">
+                <p class="text">12月28日晚间小米召开新品发布会，正式推出最新旗舰机小米11。
+                    雷军表示，小米11给人最大的感受就是轻、薄，因而在发布会前小米就打出了最新广告语“轻装上阵”。
+                    除此之外，小米还在微博上发布了一系列新品发布会倒计时海报、产品介绍海报，文案和设计都值得细品。
+                    小米11，全新高端之作12月28日正式发布
+                    有多少想象，就有多少超越想象的惊艳
+                    有多少期待，就有多少难以置信的突破
+                    有多少关注，就有多少不计代价的投入
+                    十年即将过去，新十年即将开始
+                    2021 轻装上阵！
+                </p>
+            </div>
+            <div class="news-img-list">
+                <img src="https://img1.baidu.com/it/u=2826187619,813244894&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=226" alt="">
+                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170523%2F50b6d581183d41f9925b3929e46798b0_th.jpg&refer=http%3A%2F%2Fimg.mp.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672666480&t=17e94b8c2fa5534299cc68df093e49da" alt="">
+                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13377787202%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672666480&t=b43177a9f50aa5b300bc45bda5c477f7" alt="">
+                <div class="browse-count"><i class="iconfont icon-liulan"></i> <span>140233</span> <span>次</span></div>
+            </div>
+        </a>
+        <a href="news-detail.html" class="news-list" title="点击查看新闻详情">
+            <div class="news-list-title">
+                <div class="left-title">三体学院推出最新日系动漫全套系统教程</div>
+                <div class="right-date">2023-12-01 12:00:03</div>
+            </div>
+            <div class="news-list-content">
+                <p class="text">日系画风因为本身的细节是比较少的，其对比都是比较强的，因为日系画风本就源自于黑白钢笔画的漫画，着重线条，一幅图里面的东西，弱对比就是空白，只要有东西就得是纯黑。所以在这种情况下，鼻子、眼睛、嘴巴等五官因为细节多在画面表现中是黑色的，是最高层级。而法令纹、鼻翼、口轮匝肌等因为对比相对比较弱，所以就不能画上去，一画上去，其层级就会被归类于五官这样重要的位置上。就会有对比不等、过于突出的感觉。不去刻画反而显得整体的平衡和自然。
+                </p>
+            </div>
+            <div class="news-img-list">
+                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F12030067334%2F641.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672673540&t=4cd8f9cf15c6c05e02277f184064caaf" alt="">
+                <img src="https://pic.rmb.bdstatic.com/bjh/down/a662da80e00629cb806a5b8ac31381f0.jpeg" alt="">
+                <img src="https://img0.baidu.com/it/u=1084720809,3015460447&fm=253&fmt=auto&app=138&f=JPEG?w=658&h=404" alt="">
+                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.kt5.cn%2Fwp-content%2Fuploads%2F2019%2F08%2Fmorikura-en_28.jpg&refer=http%3A%2F%2Fwww.kt5.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672673652&t=546096b4ed7b966ffc0efe3c8b388413" alt="">
+                <div class="browse-count"><i class="iconfont icon-liulan"></i> <span>78140233</span> <span>次</span></div>
+            </div>
+        </a>
+        <a href="news-detail.html" class="news-list" title="点击查看新闻详情">
+            <div class="news-list-title">
+                <div class="left-title">2023年最新Python教程已开启！</div>
+                <div class="right-date">2023-01-01 00:00:06</div>
+            </div>
+            <div class="news-list-content">
+                <p class="text">
+                    Python由荷兰数学和计算机科学研究学会的吉多·范罗苏姆于1990年代初设计，作为一门叫做ABC语言的替代品。Python提供了高效的高级数据结构，还能简单有效地面向对象编程。Python语法和动态类型，以及解释型语言的本质，使它成为多数平台上写脚本和快速开发应用的编程语言， 随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。
+                    Python解释器易于扩展，可以使用C语言或C++（或者其他可以通过C调用的语言）扩展新的功能和数据类型。Python也可用于可定制化软件中的扩展程序语言。Python丰富的标准库，提供了适用于各个主要系统平台的源码或机器码。
+                </p>
+            </div>
+            <div class="news-img-list">
+                <img src="https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00132-1104.jpg" alt="">
+                <img src="https://img0.baidu.com/it/u=268304924,1660940910&fm=253&fmt=auto&app=138&f=PNG?w=595&h=371" alt="">
+                <img src="https://img2.baidu.com/it/u=2774444248,2447887220&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="">
+                <div class="browse-count"><i class="iconfont icon-liulan"></i> <span>233</span> <span>次</span></div>
+            </div>
+        </a>
+        <a href="news-detail.html" class="news-list" title="点击查看新闻详情">
+            <div class="news-list-title">
+                <div class="left-title">WC有人居然打破了喝水都胖的魔咒，戳我看方法！</div>
+                <div class="right-date">2021-05-11 14:20:35</div>
+            </div>
+            <div class="news-list-content">
+                <p class="text">
+                    1.节食减肥。有些患者喝水都会长胖，其实这和自身体质有着莫大关系，如果正处在节食减肥期间，自身摄入的营养以及能量不足反而更容易成为易胖体质。如果演变成易胖体质时，自然喝水都会长胖，但这种长胖并不是所谓的真胖，而是身体基础代谢缓慢，从而出现水肿。
+                    2.脾胃不好。生活中不管吃什么食物都先经过脾胃的运化，然后才能转化到其他器官，如果自身有脾胃虚弱或是运化功能较差时，吃下去的食物无法得到转化，从而长期堆积在体内，长期下去自然也就会演变成脂肪。
+                </p>
+            </div>
+            <div class="news-img-list">
+                <img src="https://img1.baidu.com/it/u=3673093743,127575343&fm=253&fmt=auto&app=138&f=JPEG?w=557&h=500" alt="">
+                <img src="https://img0.baidu.com/it/u=864891432,1094005980&fm=253&fmt=auto&app=120&f=PNG?w=600&h=423" alt="">
+                <img src="https://img0.baidu.com/it/u=886472285,631673117&fm=253&fmt=auto&app=138&f=JPEG?w=630&h=428" alt="">
+                <div class="browse-count"><i class="iconfont icon-liulan"></i> <span>4233</span> <span>次</span></div>
+            </div>
+        </a>
+        <a href="news-detail.html" class="news-list" title="点击查看新闻详情">
+            <div class="news-list-title">
+                <div class="left-title">日系动漫人物泳装场景+人物</div>
+                <div class="right-date">2020-10-21 14:20:03</div>
+            </div>
+            <div class="news-list-content">
+                <p class="text">
+                    单从人体结构角度而言，本子画师的掌握程度普遍要比其他领域扎实。原因无他，本子的特殊性决定了创作者要画对每一处人体结构，否则一处微小的错误都可能让整个画面看起来异常奇怪。
+                    寻常画师相比之下则无需太在意人体结构与轮廓。部分网漫、条漫画手的人体结构可能并不扎实，但他们可以适当利用人物的衣物（如宽袍长袖）进行遮挡，只要结构不是错的太离谱，一般读者很难发现。
+                    另外，本子相较寻常漫画可能更注重人物的交互性。这意味着画师们要让两个乃至更多的人物处于一个画面中，必须在互动的同时确保人体结构不出错。（而且通常不能像其他画师一样使用阻挡来逃避对正确结构的刻画）
+                    如果剧情中有肌肉猛男登场，胸锁乳突肌、背阔肌、斜方肌等肌肉结构，没有足够的研究是很难画好的。
+                </p>
+            </div>
+            <div class="news-img-list">
+                <img src="https://b0.bdstatic.com/ugc/jsiDRNxzSfNyP64A4FO1LA8ecc5ef53be77ca1ef468d4b8a85cab2.jpg@h_1280" alt="">
+                <img src="https://img0.baidu.com/it/u=3670188855,3010321579&fm=253&fmt=auto&app=138&f=JPEG?w=700&h=490" alt="">
+                <img src="https://img0.baidu.com/it/u=2299001829,2560590961&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=709" alt="">
+                <img src="https://img2.baidu.com/it/u=891811036,428431553&fm=253&fmt=auto&app=138&f=JPEG?w=717&h=500" alt="">
+                <img src="https://img0.baidu.com/it/u=2155279225,1241523679&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=726" alt="">
+                <img src="https://img1.baidu.com/it/u=906370904,3765140443&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=315" alt="">
+                <div class="browse-count"><i class="iconfont icon-liulan"></i> <span>99999992323</span> <span>次</span></div>
+            </div>
+        </a>
+    </main>
+    <!--底部-->
+    <footer>
+        <div class="footer-container bx">
+            <div class="left-info">
+                <p class="company-info">二向箔云课堂 是三体教育（SANTI.com）旗下专注于星际武器研发的在线学习平台。</p>
+                <ul class="menu">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">撩课论坛</a></li>
+                </ul>
+                <p class="copyright-info">&copy;2022-2022 课程内容版权均归 三体教育 所有 三体ICP备18822299181</p>
+            </div>
+            <div class="right-info">
+                <div class="top-img">
+                    <div class="qq"><div class="qq-ewm ewm"><img src="assets/images/Three二维码.png" alt=""></div></div>
+                    <div class="wx"><div class="qq-ewm ewm"><img src="assets/images/Three二维码.png" alt=""></div></div>
+                </div>
+                <div class="center">
+                    <span>客服热线</span> 09:00 ~ 19:00
+                </div>
+                <div class="footer-phone">0755-6666-6666</div>
+            </div>
+        </div>
+    </footer>
+    <!--侧边栏-->
+    <div class="right-sidebar">
+        <div class="kf"></div>
+        <div class="app-download">
+            <div class="ewm"><img src="assets/images/Three二维码.png" alt=""></div>
+        </div>
+        <a class="return-top" href="#"></a>
+    </div>
+        <!-- 登陆注册面板 -->
+        <div class="login-mask">
+            <div class="login-panel">
+                <div class="close"><div class="iconfont icon-guanbi" onclick="hideMask()"></div></div>
+                <ul class="options-panel">
+                    <li class="current">账号登陆</li>
+                    <li>立即注册</li>
+                </ul>
+                <ul class="form-panel">
+                    <li class="current">
+                        <form action="">
+                            <label>
+                                <span class="iconfont icon-jurassic_user"></span>
+                                <input name="account" type="text" placeholder="请输入账号">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-weibiaoti--"></span>
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                            </label>
+                            <input type="submit" class="but" value="立即登陆">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="">
+                            <label>
+                                <span class="iconfont icon-jurassic_user"></span>
+                                <input name="account" type="text" placeholder="请输入账号">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-weibiaoti--"></span>
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-tianchongxing-"></span>
+                                <input name="inspection_pwd" type="password" placeholder="请再次输入密码">
+                            </label>
+                            <input type="submit" class="but" value="立即注册">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/login-mask.js"></script>
+</body>
+</html>

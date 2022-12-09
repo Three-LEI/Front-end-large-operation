@@ -8,9 +8,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    z-index: 99999;
+    &.show {
+        display: flex;
+    }
     .login-panel {
         width: 500px;
         height: 500px;
@@ -29,11 +33,11 @@
             // background-color: aqua;
             text-align: right;
             .icon-guanbi {
+                margin-left: auto;
+                width: 15px;
                 font-size: 15px;
                 color: var(--darkText);
-                &::before {
-                    cursor: pointer;
-                }
+                cursor: pointer;
             }
         }
         .options-panel {

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>讲师详情</title>
+    <link rel="stylesheet" href="css/teacher-detail.css">
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
+    <meta name="keyword" content="全栈,Python,Javascript,前端,后端,动漫绘画,素描,C4D">
+    <meta name="description" content="撩课，是一家致力于打造高质量课程的平台！圆你Codeing梦！">
+</head>
+<body>
+    <!--迷你导航条-->
+    <div class="mini-navbar">
+        <div class="navbar-container bx">
+            <div class="left-logo-container">
+                <div class="logo"><a href="index.html"><img src="assets/images/logo-mini.png" alt=""></a></div>
+                <ul>
+                    <li class="item"><a href="teacher.html">讲师</a></li>
+                    <li class="item"><a href="course.html">课程</a></li>
+                    <li class="item"><a href="news.html">新闻</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="center-search-container">
+                    <div class="center-search">
+                        <div class="down-menu">
+                            <label>
+                                <select name="category">
+                                    <option value="all">全部</option>
+                                    <option value="course">课程</option>
+                                    <option value="lecturer">讲师</option>
+                                    <option value="article">文章</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="search">
+                            <label>
+                                <input type="text" placeholder="请输入关键字" name="searchContent">
+                            </label>
+                        </div>
+                        <div class="search-button iconfont">
+                            <input type="submit" value="&#xe8b9;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="right-user-info">
+                <div class="right-login">
+                    <div class="box">
+                        <div class="login-box">
+                            <span class="user-name"><i class="iconfont">&#xe60c;</i>淚泪泪</span>
+                            <img src="assets/images/派蒙头像.png" alt="" class="user-head-img">
+                        </div>
+                        <div class="panel">
+                            <ul>
+                                <li class="item"><a href="https://xlsir.zcool.com.cn/">xlsir.zcool.com.cn</a></li>
+                                <li class="item"><a href="my-study.html">我的学习</a></li>
+                                <li class="item"><a href="#">我的优惠卷</a></li>
+                                <li class="item"><a href="#">设置</a></li>
+                                <li class="item"><a href="#" onclick="showMask()">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--讲师介绍条-->
+    <div class="top-lecturer-intro-bar">
+        <div class="intro-bar-container bx">
+            <div class="lecturer-head-img">
+                <img src="http://q.qlogo.cn/headimg_dl?dst_uin=3026947373&spec=640&img_type=jpg" alt="">
+            </div>
+            <div class="name-and-intro">
+                <div class="name">
+                    <h4>三体学院可控反物质负责人：淚泪泪</h4>
+                    <span class="lecturer-tags">星级讲师√</span>
+                    <span class="lecturer-tags">美少女认证√</span>
+                    <span class="lecturer-tags">三体学院讲师认证√</span>
+                </div>
+                <div class="intro">
+                    正电子、负质子都是反粒子，它们跟通常所说的电子、质子相比较，电量相等但电性相反。科学家设想在宇宙中可能存在完全由反粒子构成的物质，也就是反物质。电子和反电子的质量相同，但有相反的电荷。质子与反质子也是这样。粒子与反粒子不仅电荷相反，其他一切可以相反的性质也都相反。
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--发布课程条-->
+    <div class="release-course-bar">
+        <div class="container bx">
+            <ul>
+                <li class="item current"><a href="#">发布课程</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主体内容-->
+    <main class="bx">
+        <div class="chapter-content-area">
+            <!--chapter-content-area容器内部通过 c5 c4 c3 内容划分几列-->
+            <div class="card-hot-Good-Lesson c5">
+                <a href="course-detail.html">
+                    <div class="top-images">
+                        <img src="assets/images/QQ截图20221202235209.jpg" alt="" class="course-picture">
+                        <div class="hot-tags">热门</div>
+                    </div>
+                    <div class="bottom-content">
+                        <div class="card-title">
+                            动漫绘制光滑皮肤
+                            <p class="lecturer">
+                                讲师:
+                                <span class="lecturer-name">淚泪泪</span>
+                            </p>
+                        </div>
+                        <div class="score">
+                            <div class="star"><div style="width: 100%;" class="yellow-star"></div></div>
+                            <span class="fs">5.0</span>
+                            <span>分</span>
+                        </div>
+                        <div class="zan">
+                            <div class="iconfont icon-zan"></div>
+                            <span class="number-person">666</span>人好评
+                            <div class="release-date">2022-11-30</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-hot-Good-Lesson c5">
+                <a href="course-detail.html">
+                    <div class="top-images">
+                        <img src="assets/images/c122f67882ae465d8233a70d410c39ee_th.jpg" alt="" class="course-picture">
+                        <div class="hot-tags">热门</div>
+                    </div>
+                    <div class="bottom-content">
+                        <div class="card-title">
+                            泳装的绘制技巧
+                            <p class="lecturer">
+                                讲师:
+                                <span class="lecturer-name">淚泪泪</span>
+                            </p>
+                        </div>
+                        <div class="score">
+                            <div class="star"><div style="width: 100%;" class="yellow-star"></div></div>
+                            <span class="fs">5.0</span>
+                            <span>分</span>
+                        </div>
+                        <div class="zan">
+                            <div class="iconfont icon-zan"></div>
+                            <span class="number-person">6666</span>人好评
+                            <div class="release-date">2022-12-3</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <!--底部-->
+    <footer>
+        <div class="footer-container bx">
+            <div class="left-info">
+                <p class="company-info">二向箔云课堂 是三体教育（SANTI.com）旗下专注于星际武器研发的在线学习平台。</p>
+                <ul class="menu">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">撩课论坛</a></li>
+                </ul>
+                <p class="copyright-info">&copy;2022-2022 课程内容版权均归 三体教育 所有 三体ICP备18822299181</p>
+            </div>
+            <div class="right-info">
+                <div class="top-img">
+                    <div class="qq"><div class="qq-ewm ewm"><img src="assets/images/Three二维码.png" alt=""></div></div>
+                    <div class="wx"><div class="qq-ewm ewm"><img src="assets/images/Three二维码.png" alt=""></div></div>
+                </div>
+                <div class="center">
+                    <span>客服热线</span> 09:00 ~ 19:00
+                </div>
+                <div class="footer-phone">0755-6666-6666</div>
+            </div>
+        </div>
+    </footer>
+    <!--侧边栏-->
+    <div class="right-sidebar">
+        <div class="kf"></div>
+        <div class="app-download">
+            <div class="ewm"><img src="assets/images/Three二维码.png" alt=""></div>
+        </div>
+        <a class="return-top" href="#"></a>
+    </div>
+        <!-- 登陆注册面板 -->
+        <div class="login-mask">
+            <div class="login-panel">
+                <div class="close"><div class="iconfont icon-guanbi" onclick="hideMask()"></div></div>
+                <ul class="options-panel">
+                    <li class="current">账号登陆</li>
+                    <li>立即注册</li>
+                </ul>
+                <ul class="form-panel">
+                    <li class="current">
+                        <form action="">
+                            <label>
+                                <span class="iconfont icon-jurassic_user"></span>
+                                <input name="account" type="text" placeholder="请输入账号">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-weibiaoti--"></span>
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                            </label>
+                            <input type="submit" class="but" value="立即登陆">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="">
+                            <label>
+                                <span class="iconfont icon-jurassic_user"></span>
+                                <input name="account" type="text" placeholder="请输入账号">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-weibiaoti--"></span>
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-tianchongxing-"></span>
+                                <input name="inspection_pwd" type="password" placeholder="请再次输入密码">
+                            </label>
+                            <input type="submit" class="but" value="立即注册">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/login-mask.js"></script>
+</body>
+</html>

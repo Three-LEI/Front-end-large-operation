@@ -1,0 +1,30 @@
+@import url(normalize.css);
+@import url(//at.alicdn.com/t/c/font_3793236_e91gy6hm58.css);
+
+:root {
+  --bxSize: 1205px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bx {
+  margin: 0 auto;
+  width: 1205px;
+}
+ul, dl {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+  line-height: length;
+}
+/*# sourceMappingURL=base.css.map */

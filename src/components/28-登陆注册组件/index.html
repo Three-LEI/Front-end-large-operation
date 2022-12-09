@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="login-mask">
+    <div class="login-mask show">
         <div class="login-panel">
-            <div class="close"><div class="iconfont icon-guanbi"></div></div>
+            <div class="close"><div class="iconfont icon-guanbi" onclick="hideMask()"></div></div>
             <ul class="options-panel">
                 <li class="current">账号登陆</li>
                 <li>立即注册</li>
@@ -49,6 +49,17 @@
             </ul>
         </div>
     </div>
+<script>
+    function hideMask() {
+        let login_mask = document.getElementsByClassName("login-mask")[0];
+        login_mask.className = "login-mask"
+    }
+    function showMask() {
+        let login_mask = document.getElementsByClassName("login-mask")[0];
+        login_mask.className = "login-mask show"
+    }
+</script>
+
 <script>
     let currentIndex = 0;
 

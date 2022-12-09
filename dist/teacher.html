@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>讲师页面</title>
+    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
+    <meta name="keyword" content="全栈,Python,Javascript,前端,后端,动漫绘画,素描,C4D">
+    <meta name="description" content="撩课，是一家致力于打造高质量课程的平台！圆你Codeing梦！">
+</head>
+<body>
+    <!--迷你导航条-->
+    <div class="mini-navbar">
+        <div class="navbar-container bx">
+            <div class="left-logo-container">
+                <div class="logo"><a href="index.html"><img src="assets/images/logo-mini.png" alt=""></a></div>
+                <ul>
+                    <li class="item current"><a href="teacher.html">讲师</a></li>
+                    <li class="item"><a href="course.html">课程</a></li>
+                    <li class="item"><a href="news.html">新闻</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="center-search-container">
+                    <div class="center-search">
+                        <div class="down-menu">
+                            <label>
+                                <select name="category">
+                                    <option value="all">全部</option>
+                                    <option value="course">课程</option>
+                                    <option value="lecturer">讲师</option>
+                                    <option value="article">文章</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="search">
+                            <label>
+                                <input type="text" placeholder="请输入关键字" name="searchContent">
+                            </label>
+                        </div>
+                        <div class="search-button iconfont">
+                            <input type="submit" value="&#xe8b9;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="right-user-info">
+                <div class="right-login">
+                    <div class="box">
+                        <div class="login-box">
+                            <span class="user-name"><i class="iconfont">&#xe60c;</i>淚泪泪</span>
+                            <img src="assets/images/派蒙头像.png" alt="" class="user-head-img">
+                        </div>
+                        <div class="panel">
+                            <ul>
+                                <li class="item"><a href="https://xlsir.zcool.com.cn/">xlsir.zcool.com.cn</a></li>
+                                <li class="item"><a href="my-study.html">我的学习</a></li>
+                                <li class="item"><a href="#">我的优惠卷</a></li>
+                                <li class="item"><a href="#">设置</a></li>
+                                <li class="item"><a href="#" onclick="showMask()">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--筛选条-->
+    <div class="screen-bar">
+        <div class="screen-container bx">
+            <dl>
+                <dt>筛选：</dt>
+                <dd class="selected">全部</dd>
+                <dd>明星讲师</dd>
+            </dl>
+        </div>
+    </div>
+    <!--主体内容-->
+    <main class="bx">
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=3026947373&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name beauty-lecturer">二向箔Development Engineer：ThreeLEI</p>
+                        <p class="kc">课程<span class="number">88</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=2670854278&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name star-lecturer">猫子老师：wass</p>
+                        <p class="kc">课程<span class="number">999</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">美女老师</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=956576532&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name star-lecturer">浅笑老师：浅笑</p>
+                        <p class="kc">课程<span class="number">9</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=2087806863&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name sun-lecturer">二向箔Development Engineer：ThreeLEI</p>
+                        <p class="kc">课程<span class="number">88</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=1185287405&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name star-lecturer">二向箔Development Engineer：ThreeLEI</p>
+                        <p class="kc">课程<span class="number">88</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=1844800155&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name star-lecturer">二向箔Development Engineer：ThreeLEI</p>
+                        <p class="kc">课程<span class="number">88</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=3539508941&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name star-lecturer">二向箔Development Engineer：ThreeLEI</p>
+                        <p class="kc">课程<span class="number">88</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+        <div class="lecturer-card-container">
+            <div class="top-lecturer-info">
+                <div class="left-lecturer-content">
+                    <div class="head-img"><img src="http://q.qlogo.cn/headimg_dl?dst_uin=2372349188&spec=640&img_type=jpg" alt=""></div>
+                    <div class="lecturer-name">
+                        <p class="name star-lecturer">二向箔Development Engineer：ThreeLEI</p>
+                        <p class="kc">课程<span class="number">88</span>门</p>
+                    </div>
+                </div>
+                <div class="right-home-link"><a href="teacher-detail.html">进入主页</a></div>
+            </div>
+            <div class="bottom-introduction">
+                <p class="txt">ThreeLEI毕业于哔哩哔哩大学，专业为二向箔研发与创新。</p>
+            </div>
+        </div>
+    </main>
+    <!--底部-->
+    <footer>
+        <div class="footer-container bx">
+            <div class="left-info">
+                <p class="company-info">二向箔云课堂 是三体教育（SANTI.com）旗下专注于星际武器研发的在线学习平台。</p>
+                <ul class="menu">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">撩课论坛</a></li>
+                </ul>
+                <p class="copyright-info">&copy;2022-2022 课程内容版权均归 三体教育 所有 三体ICP备18822299181</p>
+            </div>
+            <div class="right-info">
+                <div class="top-img">
+                    <div class="qq"><div class="qq-ewm ewm"><img src="assets/images/Three二维码.png" alt=""></div></div>
+                    <div class="wx"><div class="qq-ewm ewm"><img src="assets/images/Three二维码.png" alt=""></div></div>
+                </div>
+                <div class="center">
+                    <span>客服热线</span> 09:00 ~ 19:00
+                </div>
+                <div class="footer-phone">0755-6666-6666</div>
+            </div>
+        </div>
+    </footer>
+    <!--侧边栏-->
+    <div class="right-sidebar">
+        <div class="kf"></div>
+        <div class="app-download">
+            <div class="ewm"><img src="assets/images/Three二维码.png" alt=""></div>
+        </div>
+        <a class="return-top" href="#"></a>
+    </div>
+        <!-- 登陆注册面板 -->
+        <div class="login-mask">
+            <div class="login-panel">
+                <div class="close"><div class="iconfont icon-guanbi" onclick="hideMask()"></div></div>
+                <ul class="options-panel">
+                    <li class="current">账号登陆</li>
+                    <li>立即注册</li>
+                </ul>
+                <ul class="form-panel">
+                    <li class="current">
+                        <form action="">
+                            <label>
+                                <span class="iconfont icon-jurassic_user"></span>
+                                <input name="account" type="text" placeholder="请输入账号">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-weibiaoti--"></span>
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                            </label>
+                            <input type="submit" class="but" value="立即登陆">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="">
+                            <label>
+                                <span class="iconfont icon-jurassic_user"></span>
+                                <input name="account" type="text" placeholder="请输入账号">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-weibiaoti--"></span>
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                            </label>
+                            <label>
+                                <span class="iconfont icon-tianchongxing-"></span>
+                                <input name="inspection_pwd" type="password" placeholder="请再次输入密码">
+                            </label>
+                            <input type="submit" class="but" value="立即注册">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/login-mask.js"></script>
+</body>
+</html>
